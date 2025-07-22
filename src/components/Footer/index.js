@@ -103,7 +103,7 @@ function Footer() {
 
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2024 Hitesh Mori. All rights reserved.
+          &copy; 2025 Hitesh Mori. All rights reserved.
         </Copyright>
 
       </FooterWrapper>

@@ -95,13 +95,14 @@ export const HeroRightContainer = styled.div`
 export const Img = styled.img`
   position: relative;
   width: 100%;
-  justify-content:center;
-  height:100%;
+  height: 100%;
   max-width: 480px;
   max-height: 500px;
   border-radius: 60%;
-  // border: 2px solid ${({ theme }) => theme.HeroBg};
-
+  object-fit: cover; /* Ensures the image covers the container */
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally */
+  
   @media (max-width: 768px) {
     max-width: 300px;
     max-height: 360px;
@@ -112,6 +113,7 @@ export const Img = styled.img`
     max-height: 300px;
   }
 `;
+
 
 export const Title = styled.div`
   font-weight: 700;

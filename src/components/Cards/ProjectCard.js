@@ -39,12 +39,14 @@ const Card = styled.div`
 `
 
 const Image = styled.img`
-    width: 100%;
-    height: 180px;
-    background-color: ${({ theme }) => theme.white};
-    border-radius: 10px;
-    box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
-`
+  width: 100%;
+  height: 180px;
+  background-color: ${({ theme }) => theme.white};
+  border-radius: 10px;
+  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+`;
+
 
 const Tags = styled.div`
     width: 100%;

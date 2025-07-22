@@ -3,13 +3,11 @@
 export const Bio = {
     name: "Hitesh Mori",
     roles: [
+        "Software Developer",
         "Android App Developer",
-        "Ios App Developer",
         "Programmer",
-        "UI/UX Designer",
-
     ],
-    description: "Hey there! I'm Hitesh Mori, a third-year CSE student at Nirma University. I love developing mobile and web applications, constantly exploring new technologies and improving my skills. Let's connect and create something amazing together!",
+    description: "Hey there! I'm Hitesh Mori, a Forth-year CSE student at Nirma University. I love developing mobile and web applications, constantly exploring new technologies and improving my skills. Let's connect and create something amazing together!",
     github: "https://github.com/hitesh-mori",
     linkedin: "https://www.linkedin.com/in/hitesh-mori-562673273",
     email: "hiteshvmori@gmail.com",
@@ -129,6 +127,17 @@ export const experience = [
             "Event Management",
             "Communication",
         ],
+    },
+      {
+        id: 2,
+        company: "FluxyTech",
+        role: "SDE Intern",
+        duration: "May 2025 - July 2025",
+        skills: [
+            "App Developement",
+            "Web Developement",
+            "Communication",
+        ],
     }
 
 ]
@@ -152,7 +161,7 @@ export const education = [
         img: "",
         school: "Nirma University,Ahemedabad",
         date: "Sep 2022 - June 2026",
-        grade: "7.74",
+        grade: "7.78",
         desc: "I am currently pursuing my B-Tech in Computer Science at Nirma University.",
         degre: "Computer Science & Engineering",
     },
@@ -198,7 +207,7 @@ export const projects = [
 
         ],
         catagory: "Android App",
-        github: "https://github.com/Hitesh123mori/hack_24",
+        github: "https://github.com/hitesh-mori/hack_24",
     },
 
     {
@@ -247,7 +256,7 @@ export const projects = [
             "Dart",
         ],
         catagory: "Android App",
-        github: "https://github.com/Hitesh123mori/Scanner-App---Flutter",
+        github: "https://github.com/hitesh-mori/Scanner-App---Flutter",
     },
 
     {
@@ -262,7 +271,7 @@ export const projects = [
             "Firebase"
         ],
         catagory: "Android App",
-        github: "https://github.com/Hitesh123mori/Chat_App",
+        github: "https://github.com/hitesh-mori/Chat_App",
     },
 
 
@@ -277,7 +286,7 @@ export const projects = [
             "Firebase",
         ],
         catagory: "Android App",
-        github: "https://github.com/Hitesh123mori/ingenious-5.0",
+        github: "https://github.com/hitesh-mori/ingenious-5.0",
     },
     {
         id: "8",
@@ -309,7 +318,7 @@ export const projects = [
             "Firebase"
         ],
         catagory: "Android App",
-        github: "https://github.com/Hitesh123mori/Contact_Manager",
+        github: "https://github.com/hitesh-mori/Contact_Manager",
     },
 
     {
@@ -326,7 +335,7 @@ export const projects = [
             "Flask"
         ],
         catagory: "Web App",
-        github: "https://github.com/Hitesh123mori/FraudEye",
+        github: "https://github.com/hitesh-mori/FraudEye",
     },
 
     {
@@ -343,7 +352,7 @@ export const projects = [
             "Flask"
         ],
         catagory: "Web App",
-        github: "https://github.com/Hitesh123mori/Paper2X",
+        github: "https://github.com/hitesh-mori/Paper2X",
     },
 
     {
@@ -360,7 +369,38 @@ export const projects = [
             "Flask"
         ],
         catagory: "Android App",
-        github: "https://github.com/Hitesh123mori/Connect-with",
+        github: "https://github.com/hitesh-mori/Connect-with",
+    },
+
+      {
+        id: "13",
+        title: "GOMIQ",
+        description: "We completed a project using Flutter, Dart, JS and MongoDB.",
+        image: "https://private-user-images.githubusercontent.com/125566259/467922271-8de8b9fc-ca6d-424f-aaaf-d1ff5f89db66.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMxODIxNDYsIm5iZiI6MTc1MzE4MTg0NiwicGF0aCI6Ii8xMjU1NjYyNTkvNDY3OTIyMjcxLThkZThiOWZjLWNhNmQtNDI0Zi1hYWFmLWQxZmY1Zjg5ZGI2Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcyMlQxMDU3MjZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xNDc2ODVhYTA4MTE5MjJmNjBlMGI1YzExOWE2NWZhYjM2M2ZhZjIzYjlmZmY2MDlhNjYwZTE3YTViZDcyMWNiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.kYz2Zg7sgX6kcmUpMNgNvFpGPH_Q-L5VmtcFrpCJoPk",
+        tags: [
+            "Flutter",
+            "Dart",
+            "MongoDB",
+            "Python",
+            "ML",
+            "Flask"
+        ],
+        catagory: "Web App",
+        github: "https://github.com/hitesh-mori/gomiq.git",
+    },
+
+       {
+        id: "14",
+        title: "FMS",
+        description: "I completed a project using React JS, JS and Firebase.",
+        image: "https://private-user-images.githubusercontent.com/125566259/467925489-c0dfdf22-229c-489a-9cc4-0340aeb88691.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMxODIyOTksIm5iZiI6MTc1MzE4MTk5OSwicGF0aCI6Ii8xMjU1NjYyNTkvNDY3OTI1NDg5LWMwZGZkZjIyLTIyOWMtNDg5YS05Y2M0LTAzNDBhZWI4ODY5MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcyMlQxMDU5NTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zZjQ4MWFmMDllYWZlMGNhOTM3ODc3ZDFkY2EyM2NmMmY3ZTBmN2Y4ZTAyM2YwNjNhZWVkOGJhNzZlYzI3MjIyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.kBlqqz5cCE4rUmV6M6hsO15JdGbfKbqW7aF093k2dlc",
+        tags: [
+            "React JS",
+            "Javascript",
+            "Firebase",
+        ],
+        catagory: "Web App",
+        github: "https://github.com/hitesh-mori/flat-management-system",
     },
 
 
