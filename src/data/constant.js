@@ -10,7 +10,7 @@ export const Bio = {
 
     ],
     description: "Hey there! I'm Hitesh Mori, a third-year CSE student at Nirma University. I love developing mobile and web applications, constantly exploring new technologies and improving my skills. Let's connect and create something amazing together!",
-    github: "https://github.com/Hitesh123mori",
+    github: "https://github.com/hitesh-mori",
     linkedin: "https://www.linkedin.com/in/hitesh-mori-562673273",
     email: "hiteshvmori@gmail.com",
     resume: "https://drive.google.com/file/d/1Uixju-rClpZ783zkcbsbRjGpbLrPUFQd/view?usp=drive_link"
