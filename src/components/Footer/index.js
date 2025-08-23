@@ -99,7 +99,9 @@ function Footer() {
         <SocialMediaIcons>
           <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Bio.github} target="display"><Github /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.email} target="display"><Email/></SocialMediaIcon>
+          <SocialMediaIcon href={`mailto:${Bio.email}`} target="_blank">
+            <Email />
+          </SocialMediaIcon>
 
         </SocialMediaIcons>
         <Copyright>
