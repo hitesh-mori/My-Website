@@ -11,7 +11,7 @@ export const Bio = {
     github: "https://github.com/hitesh-mori",
     linkedin: "https://www.linkedin.com/in/hitesh-mori-562673273",
     email: "hiteshvmori@gmail.com",
-    resume: "https://drive.google.com/file/d/1kUkOiJswnKRBzNhOYGLSjnCKV9VrfZD6/view?usp=sharing"
+    resume: "https://drive.google.com/file/d/1gq4HDL84hIiNTmI0weYuHB__Rn-RxgWS/view?usp=sharing"
 
 };
 
@@ -31,16 +31,8 @@ export const skills = [
                 image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg",
             },
             {
-                name: "Python",
-                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-            },
-            {
                 name: "JavaScript",
                 image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-            },
-            {
-                name: "ShellScript",
-                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg",
             },
             {
                 name: "SQL",
@@ -72,11 +64,6 @@ export const skills = [
             {
                 name: "GitHub",
                 image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
-            },
-
-            {
-                name: "Docker",
-                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
             },
 
             {
