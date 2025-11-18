@@ -856,7 +856,228 @@ export const codingProfiles = [
 // Blog Posts
 // For images in content, use markdown syntax: ![Alt text](image-url)
 // You can use any publicly accessible image URL
-export const blogPosts = [];
+export const blogPosts = [
+    {
+        id: "1",
+        slug: "my-hackathon-journey",
+        title: "My Hackathon Journey: From Nervous Freshman to Top Ranker",
+        excerpt: "9 hackathons, countless sleepless nights, and lessons that shaped me as a developer. Here's what I learned about building fast, pitching well, and standing out.",
+        date: "2025-01-15",
+        readTime: "8 min read",
+        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/hackthon_blog.jpg?alt=media&token=c6f831c9-1aaf-46af-9b94-0d586c5188cc",
+        tags: ["Hackathon", "Experience", "Tips"],
+        content: `# My Hackathon Journey: 10 Hackathons, Sleepless Nights, and Everything I Learned
+
+## Where It All Started
+
+HackNUThon 4.0, Nirma University. My first hackathon ever.
+
+I had just started learning Flutter a few months back. Didn't know much about APIs, databases were confusing, and the idea of building something in 48 hours seemed impossible.
+
+But there I was, sitting in a lab at 3 AM, eyes burning, energy drinks scattered everywhere, trying to figure out why the QR scanner wasn't working. My teammates were equally lost. We had no idea what we were doing.
+
+We barely slept. Maybe 2 hours total. The code was messy. The UI was basic. But somehow, we managed to build Fetch Info - a digital business card app where salesmen could share their details via QR code.
+
+When they announced the results and called our team name for 5th place, I couldn't believe it. As freshers in second year, competing against seniors, we actually ranked.
+
+That night changed everything. I was hooked.
+
+---
+
+## My Complete Hackathon History
+
+| Event | Rank | Organized By | Year |
+|-------|------|--------------|------|
+| HackNUThon 4.0 | 5th Place | Nirma University | 2023 |
+| HackOut 2023 | 7th Place | DAIICT | 2023 |
+| Tic Tech Toe 2023 | 2nd Place | DAIICT | 2023 |
+| Ingenium 5.0 | Participated | Ahmedabad University | 2023 |
+| HackOut 2024 | 6th Place | DAIICT | 2024 |
+| Tic Tech Toe 2024 | 4th Place | DAIICT | 2024 |
+| Smart India Hackathon | Participated | Government of India | 2024 |
+| Mined 2025 | Participated | Nirma & Binghamton University | 2025 |
+| HackNUThon 6.0 | Participated | Nirma University | 2025 |
+| Odoo x Amalthea | 1st in Virtual Round | IIT Gandhinagar | 2025 |
+
+10 hackathons. Some wins, some losses. Each one taught me something different.
+
+The Odoo x Amalthea hackathon was interesting - we secured 1st rank in the virtual round but didn't place in the finals. That's how hackathons go sometimes. You can be at the top one round and nowhere the next.
+
+---
+
+## What I've Learned: A Complete Guide
+
+After 10 hackathons, here's everything I wish someone told me before my first one.
+
+### Before the Hackathon Starts
+
+**Make a template ready.**
+
+This is something most people don't do, and it costs them hours during the hackathon.
+
+Before you even reach the venue, have these ready:
+- A basic app/web template with authentication already set up
+- Your preferred folder structure
+- Common utilities and helper functions
+- UI components you use frequently
+- Database connection code
+
+When the hackathon starts, you don't want to waste 2 hours setting up a project. You want to start building immediately.
+
+I always keep Flutter and React templates ready with Firebase authentication, basic navigation, and common widgets. Saves me at least 3-4 hours every hackathon.
+
+### Choosing the Problem Statement
+
+This is where most teams go wrong.
+
+When problem statements are released, don't just pick one randomly. Sit with your team and analyze:
+
+**Which problem attracts the most mentors?**
+Mentors gravitate towards certain problem statements. If yours is popular among mentors, you'll get more feedback, more guidance, and more visibility.
+
+**What's the competition like?**
+Some problem statements have 50 teams. Some have 10. If you want an easier path to winning, pick one with less competition.
+
+But honestly? I always pick the one with more participants. Yes, it's harder. But the satisfaction of winning against 50 teams is different from winning against 10. That's just how I think.
+
+**Can your team actually build it?**
+Don't pick an AI/ML problem if nobody on your team knows ML. Be realistic about what you can deliver in 24-48 hours.
+
+### Decide the Platform Early
+
+Once you have the problem statement, immediately decide:
+- Mobile app?
+- Web app?
+- Cross-platform?
+
+This decision affects everything - your tech stack, task division, and timeline.
+
+Don't waste an hour debating this. Look at the problem, see what makes sense, and decide in 10 minutes.
+
+### Pick a Tech Stack Everyone Knows
+
+This is crucial.
+
+Don't use a hackathon to learn a new framework. Use what your team already knows.
+
+If three of your four team members know Flutter, use Flutter. If everyone's comfortable with React, use React. If your ML guy only knows Python, let him use Python.
+
+The goal is speed. You can't be fast if half your team is reading documentation.
+
+For my hackathons, we usually go with Flutter + Firebase + Python (for ML). Everyone on my team is comfortable with this stack, so we move fast.
+
+### Divide Tasks Immediately
+
+I made this mistake in my early hackathons - we'd all just start working on random things, stepping on each other's toes, duplicating work, leaving gaps.
+
+Now, the first thing we do after choosing the problem:
+
+**Divide tasks clearly.**
+
+- Person A: UI/UX design and frontend screens
+- Person B: Backend APIs and database
+- Person C: Core logic and integrations
+- Person D: ML model (if needed) or testing
+
+Everyone knows their job. No confusion. No "I thought you were doing that."
+
+Write it down. Put it in a shared doc or WhatsApp group. Reference it throughout the hackathon.
+
+### The 25% Rule
+
+Here's something that changed how I approach hackathons:
+
+**After completing 25% of your project, go talk to a mentor.**
+
+Don't wait until you're done. Don't wait until you're stuck. Go early.
+
+At 25% completion, you have enough to show but enough time to change direction. Mentors will tell you:
+- What's missing
+- What to improve
+- What judges will look for
+- Whether your approach makes sense
+
+I've had mentors completely change our project direction at this stage. It hurt to throw away work, but their advice got us ranked.
+
+If you wait until 80% completion to ask for feedback, it's too late to make major changes.
+
+### The Final Presentation
+
+Your project might be amazing, but if you present it poorly, you'll lose to a worse project with a better presentation.
+
+**Make a solid PPT (10-15 slides)**
+
+Your slides should cover:
+1. Problem statement
+2. Who faces this problem
+3. Your solution
+4. Key features (with screenshots)
+5. Tech stack
+6. Architecture diagram
+7. Demo
+8. Future scope
+9. Team
+
+Don't put walls of text. Use visuals. Keep it clean.
+
+**This PPT represents your sleepless night.** Make sure it shows the effort you put in.
+
+**Create a working demo video**
+
+Even if your live demo works perfectly in practice, have a backup video.
+
+I've seen demos crash during presentations. Servers go down. Apps freeze. Having a video saves you.
+
+Record a 2-3 minute video showing all your features working smoothly.
+
+**Deploy if possible**
+
+If your project can be deployed (web app, API), deploy it before the presentation.
+
+Judges are impressed when they can actually use your product. It shows completeness.
+
+### How to Present
+
+When it's your turn to present:
+
+1. **Start with slides** - Explain the problem and solution clearly
+2. **Show live demo if it's working** - Let judges see it in action
+3. **Fall back to video if needed** - If something breaks, switch to video smoothly
+4. **Let different team members speak** - Shows teamwork
+
+Don't let one person do all the talking. Judges notice when only one person presents - it looks like a solo project with spectators.
+
+Each team member should present their part. The frontend person explains UI. The backend person explains architecture. This shows everyone contributed.
+
+---
+
+## Why I Keep Going Back
+
+Not every hackathon ends with a rank. Ingenium 5.0, Smart India Hackathon, Mined 2025 - we didn't place.
+
+But I keep participating because hackathons give you something classes can't:
+
+**Real pressure.** You learn to build fast, debug faster, and make decisions quickly.
+
+**Real teamwork.** You see how people behave at 4 AM when nothing works.
+
+**Real learning.** I've learned more in 24-hour hackathons than in entire semesters.
+
+And honestly? The feeling of building something from scratch and seeing it work - there's nothing like it.
+
+---
+
+## Final Words
+
+If you've never done a hackathon, just sign up for one. You'll feel unprepared. That's normal.
+
+If you've done hackathons but never ranked, analyze what went wrong. Was it the problem statement choice? The presentation? The time management? Fix that specific thing and try again.
+
+Hackathons aren't about being the best coder. They're about building something that works, presenting it well, and not falling apart when things go wrong.
+
+See you at the next one.`
+    }
+];
 
 // Social Links
 export const socialLinks = [
