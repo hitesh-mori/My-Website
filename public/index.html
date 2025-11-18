@@ -4,27 +4,56 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#0a0a0f" />
     <meta
-      name="Hitesh Mori"
-      content="Hey there! I'm Hitesh Mori, a third-year CSE student at Nirma University. I love developing mobile and web applications, constantly exploring new technologies and improving my skills. Let's connect and create something amazing together!"
+      name="description"
+      content="Hey there! I'm Hitesh Mori, a Fourth-year CSE student at Nirma University. I love developing mobile and web applications, constantly exploring new technologies and improving my skills. Let's connect and create something amazing together!"
     />
+
+    <!-- Performance optimizations -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://firebasestorage.googleapis.com" />
+
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://firebasestorage.googleapis.com" />
+
+    <!-- Preload critical font -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" /></noscript>
+
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Hitesh Mori</title>
+    <!-- SEO meta tags -->
+    <meta name="author" content="Hitesh Mori" />
+    <meta name="keywords" content="Hitesh Mori, portfolio, developer, Flutter, React, web development, mobile development, Nirma University" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Hitesh Mori | Flutter & React Developer" />
+    <meta property="og:description" content="Fourth-year CSE student at Nirma University. Passionate about mobile and web development with Flutter, React, and modern technologies." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hitesh-mori.vercel.app" />
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/photo.jpg?alt=media" />
+
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hitesh Mori | Flutter & React Developer" />
+    <meta name="twitter:description" content="Fourth-year CSE student at Nirma University. Passionate about mobile and web development." />
+
+    <title>Hitesh Mori | Flutter & React Developer</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

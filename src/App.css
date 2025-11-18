@@ -1,20 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Font is now preloaded in index.html for better performance */
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  cursor: none !important;
-}
-
-@media (max-width: 768px) {
-  * {
-    cursor: auto !important;
-  }
 }
 
 html {
   scroll-behavior: smooth;
+  /* Improve scroll performance */
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -25,6 +20,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #0a0a0f;
+  /* Optimize text rendering */
+  text-rendering: optimizeLegibility;
 }
 
 /* Custom Scrollbar */
@@ -66,6 +63,24 @@ button {
 img {
   max-width: 100%;
   height: auto;
+  /* Optimize image rendering */
+  image-rendering: -webkit-optimize-contrast;
+  /* Enable hardware acceleration for images */
+  transform: translateZ(0);
+  /* Prevent layout shifts */
+  content-visibility: auto;
+}
+
+/* Performance optimization for animated elements */
+.animated {
+  will-change: transform, opacity;
+}
+
+/* Hardware acceleration for fixed elements */
+[style*="position: fixed"],
+[style*="position:fixed"] {
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 /* Loading animation */
