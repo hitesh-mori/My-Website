@@ -24,7 +24,7 @@ const Body = styled.div`
   position: relative;
 `;
 
-// Static background gradient (removed animation for performance)
+// Animated background gradient
 const GradientBackground = styled.div`
   position: fixed;
   top: 0;
@@ -34,9 +34,31 @@ const GradientBackground = styled.div`
   z-index: 0;
   overflow: hidden;
   pointer-events: none;
-  background: radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.12) 0%, transparent 50%),
-              radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
-              radial-gradient(circle at 40% 40%, rgba(168, 85, 247, 0.06) 0%, transparent 50%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(168, 85, 247, 0.08) 0%, transparent 50%);
+    animation: gradientMove 20s ease-in-out infinite;
+  }
+
+  @keyframes gradientMove {
+    0%, 100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    33% {
+      transform: translate(30px, -30px) rotate(120deg);
+    }
+    66% {
+      transform: translate(-20px, 20px) rotate(240deg);
+    }
+  }
 `;
 
 const ContentWrapper = styled.div`

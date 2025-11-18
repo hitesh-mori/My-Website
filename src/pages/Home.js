@@ -364,19 +364,19 @@ const SocialIcon = styled.a`
 
 const HeroImageWrapper = styled(motion.div)`
   position: relative;
-  width: 450px;
-  height: 450px;
+  width: 420px;
+  height: 420px;
 
   @media (max-width: 768px) {
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
   }
 `;
 
 const HeroImageBg = styled.div`
   position: absolute;
   inset: 0;
-  background: ${({ theme }) => theme.primaryGradient};
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.4) 0%, rgba(139, 92, 246, 0.3) 50%, rgba(168, 85, 247, 0.4) 100%);
   border-radius: 50%;
   animation: ${pulse} 4s ease-in-out infinite;
 
@@ -384,10 +384,9 @@ const HeroImageBg = styled.div`
     content: '';
     position: absolute;
     inset: -8px;
-    background: ${({ theme }) => theme.primaryGradient};
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.1) 50%, rgba(168, 85, 247, 0.15) 100%);
     border-radius: 50%;
     z-index: -1;
-    opacity: 0.3;
     filter: blur(20px);
   }
 
@@ -395,10 +394,9 @@ const HeroImageBg = styled.div`
     content: '';
     position: absolute;
     inset: -20px;
-    background: ${({ theme }) => theme.primaryGradient};
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(139, 92, 246, 0.05) 50%, rgba(168, 85, 247, 0.08) 100%);
     border-radius: 50%;
     z-index: -2;
-    opacity: 0.1;
     filter: blur(40px);
   }
 `;
@@ -752,12 +750,13 @@ const NewsCardBadge = styled.span`
   font-size: 0.6rem;
   font-weight: 700;
   color: white;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   padding: 4px 10px;
   border-radius: 20px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  z-index: 10;
 `;
 
 const NewsCardContent = styled.div`

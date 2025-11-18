@@ -275,7 +275,7 @@ We are a team of four:
 - **Hitesh Mori (Me)** - Frontend Development
 
 We secured 6th rank in this hackathon!`,
-        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/khedut_mitra_cover.jpg?alt=media&token=996dad56-7143-4f61-9498-7c963ebc7b20",
+        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/Khedut%20Mitra.png?alt=media&token=ac588c82-4a81-43ca-8134-9aa63db36982",
         tags: ["6th Rank", "Flutter", "Dart", "Firebase", "Python", "AI/ML"],
         category: "Mobile App",
         github: "https://github.com/hitesh-mori/hack_24",
@@ -403,7 +403,7 @@ This was a special project - my entry into both Flutter development and hackatho
         image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/fetch_info_cover.jpg?alt=media&token=45f943e4-dce7-41db-a417-83bfa45bdfb5",
         tags: ["5th Rank", "Flutter", "Dart", "Firebase"],
         category: "Mobile App",
-        github: "https://github.com/hitesh-mori/Scanner-App---Flutter",
+        github: "https://github.com/hitesh-mori/Scanner-App",
         preview: "",
         featured: false,
         date: "2023",
@@ -439,10 +439,10 @@ This was a personal learning project where I explored:
 - Firebase Storage for media files
 - Firebase Authentication for user management
 - Flutter state management and UI design`,
-        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/chat_cover.jpg?alt=media&token=92dbf06c-7a4e-4074-aba8-07dfaa487307",
+        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/chat%20app.png?alt=media&token=045f6cc0-983c-4840-80f2-6e17cd552926",
         tags: ["Flutter", "Dart", "Firebase"],
         category: "Mobile App",
-        github: "https://github.com/hitesh-mori/Chat_App",
+        github: "https://github.com/hitesh-mori/Chat-App",
         preview: "https://drive.google.com/file/d/1YpKpR40dsVCOEeQ46aZlVnAApt8Jn1Xv/view?usp=sharing",
         featured: false,
         date: "2023",
@@ -485,10 +485,10 @@ We are a team of four:
 - **Hitesh Mori (Me)** - Frontend Development
 
 We learned many things from this hackathon experience!`,
-        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/smartlink_cover.jpg?alt=media&token=f0861375-43e2-4421-904f-8c32f3e50011",
+        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/smart%20link.png?alt=media&token=6e4bab72-a87d-4aad-a0ad-070260eb02ea",
         tags: ["Flutter", "Dart", "Firebase"],
         category: "Mobile App",
-        github: "https://github.com/hitesh-mori/ingenious-5.0",
+        github: "https://github.com/hitesh-mori/Smart-Link",
         preview: "https://youtu.be/iiCiRZWN5UU?feature=shared",
         featured: false,
         date: "2023",
@@ -567,7 +567,7 @@ This project demonstrates:
         image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/contact_manager_cover.jpg?alt=media&token=b6955d5e-dc5d-44bc-94e5-5b12caa90299",
         tags: ["Flutter", "Dart", "Firebase", "DSA"],
         category: "Mobile App",
-        github: "https://github.com/hitesh-mori/Contact_Manager",
+        github: "https://github.com/hitesh-mori/Contact-Manager",
         preview: "https://drive.google.com/file/d/1CjbVW-11sMCvTLs3DlBGiDFYhaqCB0Xe/view?usp=sharing",
         featured: false,
         date: "2023",

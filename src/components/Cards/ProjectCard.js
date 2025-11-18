@@ -29,13 +29,15 @@ const ImageContainer = styled.div`
   width: 100%;
   height: 200px;
   overflow: hidden;
+  background: ${({ theme }) => theme.bgLight};
 `;
 
 const Image = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.5s ease;
+  padding: 10px;
 `;
 
 const Content = styled.div`
