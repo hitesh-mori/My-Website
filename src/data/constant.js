@@ -1,30 +1,45 @@
-// my bio
-
+// Bio Information
 export const Bio = {
     name: "Hitesh Mori",
     roles: [
         "Software Developer",
-        "Android App Developer",
-        "Programmer",
+        "Cross Platform Developer",
+        "Full Stack Developer",
+        "Problem Solver",
     ],
-    description: "Hey there! I'm Hitesh Mori, a Forth-year CSE student at Nirma University. I love developing mobile and web applications, constantly exploring new technologies and improving my skills. Let's connect and create something amazing together!",
+    description: "Hey there! I'm Hitesh Mori, a Fourth-year CSE student at Nirma University. I love developing mobile and web applications, constantly exploring new technologies and improving my skills. Let's connect and create something amazing together!",
     github: "https://github.com/hitesh-mori",
     linkedin: "https://www.linkedin.com/in/hitesh-mori-562673273",
+    twitter: "",
     email: "hiteshvmori@gmail.com",
     resume: "https://drive.google.com/file/d/1gq4HDL84hIiNTmI0weYuHB__Rn-RxgWS/view?usp=sharing"
-
 };
 
+// Navigation Links
+export const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "Projects", path: "/projects" },
+    { name: "Experience", path: "/experience" },
+    { name: "Achievements", path: "/achievements" },
+    { name: "Blog", path: "/blog" },
+];
 
-// my skills 
+// Skills
 export const skills = [
-
     {
-        title: "Language",
+        title: "Languages",
         skills: [
+            {
+                name: "C",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
+            },
             {
                 name: "C++",
                 image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+            },
+            {
+                name: "Java",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
             },
             {
                 name: "Dart",
@@ -35,69 +50,47 @@ export const skills = [
                 image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
             },
             {
+                name: "Python",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+            },
+            {
                 name: "SQL",
                 image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
             },
-
-               {
-                name: "MySQL",
-                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
-            },
-
-            
         ],
     },
-
     {
-        title: "Frameworks and Tools",
+        title: "Frontend",
         skills: [
             {
                 name: "Flutter",
                 image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
             },
-
             {
-                name: "Git",
-                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-            },
-
-            {
-                name: "GitHub",
-                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
-            },
-
-            {
-                    name: "Vs Code",
-                    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
-            },
-           {
-                    name: "Android Studio",
-                    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg",
+                name: "HTML",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
             },
             {
-                    name: "Postman",
-                    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
-
-            }
+                name: "CSS",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+            },
         ],
     },
-
     {
         title: "Backend",
         skills: [
             {
-                name: "Express js",
-                image : "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
-            },
-            {
-                name: "Node js",
+                name: "Node.js",
                 image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
             },
-
+            {
+                name: "Express.js",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+            },
         ]
     },
     {
-        title: "Database Systems",
+        title: "Database & Cloud",
         skills: [
             {
                 name: "MongoDB",
@@ -107,332 +100,779 @@ export const skills = [
                 name: "Firebase",
                 image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
             },
+            {
+                name: "MySQL",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+            },
         ]
-
     },
-]
+    {
+        title: "Tools & Others",
+        skills: [
+            {
+                name: "Git",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+            },
+            {
+                name: "GitHub",
+                image: "https://img.icons8.com/glyph-neue/512/FFFFFF/github.png",
+            },
+            {
+                name: "VS Code",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+            },
+            {
+                name: "Android Studio",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg",
+            },
+            {
+                name: "Postman",
+                image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+            },
+        ],
+    },
+];
 
-// my experiences
-
-
+// Experience
 export const experience = [
-
     {
         id: 0,
-        company: "Computer Society of india",
-        role: "Core member",
-        duration: "Fev 2024 - Now",
+        company: "FluxyTech",
+        role: "SDE Intern",
+        date: "May 2025 - July 2025",
+        description: "Working on mobile and web application development, collaborating with cross-functional teams to deliver high-quality software solutions.",
         skills: [
-            "Hackthon Organized",
-            "Team Management",
-            "Event Management",
-            "Communication",
+            "App Development",
+            "Web Development",
+            "Team Collaboration",
         ],
+        logo: "",
     },
     {
         id: 1,
-        company: "Computer Society of india",
-        role: "Executive member",
-        duration: "Sep 2023 - Feb 2024",
+        company: "Computer Society of India",
+        role: "Core Member",
+        date: "Feb 2024 - Nov 2024",
+        description: "Organizing hackathons, managing technical events, and leading teams for various college activities.",
+        skills: [
+            "Hackathon Organization",
+            "Team Management",
+            "Event Management",
+            "Leadership",
+        ],
+        logo: "",
+    },
+    {
+        id: 2,
+        company: "Computer Society of India",
+        role: "Executive Member",
+        date: "Sep 2023 - Feb 2024",
+        description: "Assisted in organizing events, coordinating with team members, and managing event logistics.",
         skills: [
             "Team Management",
             "Event Management",
             "Communication",
         ],
+        logo: "",
     },
-      {
-        id: 2,
-        company: "FluxyTech",
-        role: "SDE Intern",
-        duration: "May 2025 - July 2025",
-        skills: [
-            "App Developement",
-            "Web Developement",
-            "Communication",
-        ],
-    }
+];
 
-]
-
-
-// my education
-
-
+// Education
 export const education = [
     {
         id: 0,
-        img: "",
-        school: "Dholakiya School,Rajkot",
-        date: "May 2020 - March 2022",
-        grade: "91%",
-        desc: "I completed my 11th and 12th science from dholakiya school rajkot.",
-        degre: "Science",
+        school: "Nirma University, Ahmedabad",
+        degree: "B.Tech in Computer Science & Engineering",
+        date: "Sep 2022 - Present",
+        grade: "7.84 CGPA",
+        description: "Currently pursuing my B.Tech in Computer Science and Engineering from Nirma University.",
+        logo: "",
     },
     {
         id: 1,
-        img: "",
-        school: "Nirma University,Ahemedabad",
-        date: "Sep 2022 - Present",
-        grade: "7.84",
-        desc: "I am currently pursuing my B-Tech in Computer Science at Nirma University.",
-        degre: "Computer Science & Engineering",
+        school: "Dholakiya School, Rajkot",
+        degree: "Higher Secondary (Science)",
+        date: "May 2020 - March 2022",
+        grade: "91% | GUJCET: 102.5/120",
+        description: "Completed my 11th and 12th Science from Dholakiya School. Subjects: Physics, Chemistry, and Mathematics.",
+        logo: "",
     },
+];
 
-]
-
-
-// my projects
-
-
+// Projects
 export const projects = [
-
     {
         id: "1",
-        title: "Edu Flow",
-        description: "We completed a project at TicTechToe 2024, DAIICT hackathon.(Top 10)",
+        title: "TeachAssists",
+        shortDescription: "AI-based Learning Management System developed at TicTechToe 2024. Features resource management, attendance tracking, assignment submission, and AI-powered assistance for students and teachers.",
+        description: `## Overview
+
+We developed **TeachAssists** at **Tic Tech Toe 2024**, organized by the IFECT Club at DAIICT. This project is an AI-based Learning Management System designed to help students and teachers organize their academic activities efficiently.
+
+## Key Features
+
+- **Resource Management**: Organize and share learning materials
+- **Attendance Tracking**: Automated attendance management system
+- **Assignment Submission**: Streamlined assignment upload and review
+- **AI-Powered Assistance**: Intelligent learning recommendations
+- **Progress Tracking**: Monitor student performance and engagement
+
+## Tech Stack
+
+Built as a Flutter mobile application with a robust backend:
+- **Frontend**: Flutter & Dart
+- **Backend**: Flask & Python
+- **Database**: Firebase
+- **AI/ML**: Machine learning models for intelligent features
+
+## Team
+
+We are a team of four:
+- **Niraj Chaudhary** - Backend Development
+- **Jisan Thobani** - AI/ML Development
+- **Ankit Pandoor** - Development Support
+- **Hitesh Mori (Me)** - Frontend Development
+
+This was an amazing hackathon experience where we secured 4th rank!`,
         image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/EduFlow_cover.png?alt=media&token=8b32b179-9370-4360-8b19-33368343ff60",
-        tags: [
-            "Flutter",
-            "Dart",
-            "Firebase",
-            "CNN",
-            "Flask",
-            "Python"
-
-        ],
-        catagory: "Android App",
+        tags: ["4th Rank", "Flutter", "Dart", "Firebase", "Flask", "Python", "AI/ML"],
+        category: "Mobile App",
         github: "https://github.com/Niraj-KC/tic-tech-teo-24/tree/main/teach_assist",
+        preview: "https://drive.google.com/file/d/1aOhKV4qbhwLtuCDw4JAINEMU6N-kjR4R/view?usp=sharing",
+        featured: true,
+        date: "2024",
     },
-
     {
         id: "2",
         title: "Khedut Mitra",
-        description: "We completed a project at Hackout 2024, DAIICT hackathon.(Top 10)",
+        shortDescription: "6th Rank - Hackout 2024 | A comprehensive farming guide app that helps farmers check product prices, find the right fertilizers for specific crops, and access agricultural information.",
+        description: `## Overview
+
+We developed **Khedut Mitra** at **Hackout 2024**, organized by DAIICT. This project is a comprehensive farming assistant application designed to help farmers with their daily agricultural needs.
+
+## Key Features
+
+- **Product Price Checker**: Real-time market prices for agricultural products
+- **Fertilizer Guide**: Recommendations for fertilizers based on crop type and soil conditions
+- **Crop Disease Detection**: AI-powered disease identification from crop images
+- **Weather Updates**: Local weather forecasts for better farming decisions
+- **Agricultural Tips**: Best practices and seasonal farming advice
+
+## Tech Stack
+
+Built as a Flutter mobile application with AI capabilities:
+- **Frontend**: Flutter & Dart
+- **Backend**: Python (Flask)
+- **Database**: Firebase
+- **AI/ML**: Machine learning models for disease detection and recommendations
+
+## Team
+
+We are a team of four:
+- **Niraj Chaudhary** - Backend Development
+- **Milap Patel** - AI/ML Development
+- **Ankit Pandoor** - Development Support
+- **Hitesh Mori (Me)** - Frontend Development
+
+We secured 6th rank in this hackathon!`,
         image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/khedut_mitra_cover.jpg?alt=media&token=996dad56-7143-4f61-9498-7c963ebc7b20",
-        tags: [
-            "Flutter",
-            "Dart",
-            "Firebase",
-            "CNN",
-            "Flask",
-            "Python"
-
-        ],
-        catagory: "Android App",
+        tags: ["6th Rank", "Flutter", "Dart", "Firebase", "Python", "AI/ML"],
+        category: "Mobile App",
         github: "https://github.com/hitesh-mori/hack_24",
+        preview: "https://www.youtube.com/watch?v=obRsSTwnhIo",
+        featured: true,
+        date: "2024",
     },
-
     {
         id: "3",
         title: "MedEase",
-        description: "We completed a project at Tic Tech Toe 2023, DAIICT hackathon.(2nd Rank)",
+        shortDescription: "2nd Rank - Tic Tech Toe 2023 | A healthcare management platform with three user types: Patient, Doctor, and Admin. Features appointment booking, schedule management, and admin dashboard.",
+        description: `## Overview
+
+We secured **2nd Rank** in **Tic Tech Toe 2023** at IFECT DAIICT with MedEase! This is a comprehensive healthcare management platform designed to streamline medical appointments and patient-doctor interactions.
+
+## User Types
+
+The platform supports three types of users:
+- **Patient**: Book appointments with doctors based on available time slots
+- **Doctor**: Manage schedules and arrange time optimally for consultations
+- **Admin**: View all details, manage users, and monitor platform activity
+
+## Key Features
+
+- **Appointment Booking**: Patients can book slots in doctor's available timings
+- **Schedule Management**: Doctors can optimize their consultation schedules
+- **Admin Dashboard**: Complete overview of platform activities and user management
+- **Real-time Updates**: Instant notifications for appointments and changes
+
+## Tech Stack
+
+Full-stack application with multiple components:
+- **Patient & Doctor App**: Flutter & Dart (Mobile)
+- **Admin Dashboard**: React JS (Web)
+- **Backend**: Django
+- **Database**: MongoDB
+
+## Team
+
+We are a team of four:
+- **Niraj Chaudhary** - API Integration
+- **Mihir Patel** - Backend Development
+- **Kenil Patel** - UI/UX Design & Presentation
+- **Hitesh Mori (Me)** - Frontend Development
+
+This was an amazing achievement - our first major hackathon win!`,
         image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/med_ease_cover.jpg?alt=media&token=b5d6a3ae-5410-4b52-9269-0d400446d140",
-        tags: [
-            "Flutter",
-            "Dart",
-            "MongoDB",
-            "HTML",
-            "CSS",
-            "JAVASCRIPT",
-            "React JS",
-            "Bootstrapt",
-            "Django",
-
-        ],
-        catagory: "Android App",
+        tags: ["2nd Rank", "Flutter", "Dart", "Django", "MongoDB", "React JS"],
+        category: "Mobile App",
         github: "https://github.com/Niraj-KC/tic-tech-toe-2023",
+        preview: "",
+        featured: true,
+        date: "2023",
     },
-
     {
         id: "4",
         title: "EduShakha",
-        description: "We completed a project using Flutter, Dart, MongoDB,Django at Hackout 2023, DAIICT hackathon.(7th Rank)",
+        shortDescription: "7th Rank - Hackout 2023 | An edutech platform connecting students with university events including seminars, webinars, hackathons, and more.",
+        description: `## Overview
+
+We developed **EduShakha** at **Hackout 2023**, DAIICT and secured **7th Rank**! This is an edutech platform designed to bridge the gap between universities and students for event discovery and participation.
+
+## Key Features
+
+- **Event Discovery**: Students can browse and find events from various universities
+- **Event Types**: Support for seminars, webinars, hackathons, workshops, and more
+- **University Portal**: Universities can post their event details and manage registrations
+- **Student Registration**: Easy event registration and tracking
+- **Event Notifications**: Stay updated with upcoming events of interest
+
+## Tech Stack
+
+Built as a full-stack mobile application:
+- **Frontend**: Flutter & Dart
+- **Backend**: Django
+- **Database**: MongoDB
+
+## Team
+
+We are a team of four:
+- **Niraj Chaudhary** - Backend Development
+- **Mihir Patel** - Backend Development
+- **Parthiv Vekariya** - Development Support
+- **Hitesh Mori (Me)** - Frontend Development
+
+This was our first hackathon at another college - great experience with sleepless nights!`,
         image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/edushakha_cover.jpg?alt=media&token=7959e8e9-f53d-462e-bcba-dcc06854a645",
-        tags: [
-            "Flutter",
-            "Dart",
-            "Django",
-            "MonogoDB",
-        ],
-        catagory: "Android App",
+        tags: ["7th Rank", "Flutter", "Dart", "Django", "MongoDB"],
+        category: "Mobile App",
         github: "https://github.com/Niraj-KC/Edusakha-Hackout-23",
+        preview: "",
+        featured: false,
+        date: "2023",
     },
     {
         id: "5",
-        title: "ScannerApp",
-        description: "We completed a project using Flutter, Dart, Firebase at HackNUThon 4.0, Nirma University University hackathon.(5th Rank)",
-        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/fetch_info_cover.jpg?alt=media&token=45f943e4-dce7-41db-a417-83bfa45bdfb5",
-        tags: [
-            "Flutter",
-            "Firebase",
-            "Dart",
-        ],
-        catagory: "Android App",
-        github: "https://github.com/hitesh-mori/Scanner-App---Flutter",
-    },
+        title: "Fetch Info",
+        shortDescription: "5th Rank - HackNUThon 4.0 | My first Flutter and hackathon project! A digital business card app that helps salesmen share their details via QR code scanning.",
+        description: `## Overview
 
+**Fetch Info** was my **first Flutter project** and **first hackathon project**! We developed this at **HackNUThon 4.0**, Nirma University and secured **5th Rank**. This app helps salesmen share their professional details in a digital manner.
+
+## Key Features
+
+- **QR Code Generation**: Generate unique QR codes for your business profile
+- **Quick Scanning**: Scan QR codes to instantly receive contact details
+- **Digital Business Card**: Share professional information without physical cards
+- **Contact Management**: Save and organize received contacts
+- **Easy Sharing**: Transfer details seamlessly between users
+
+## Tech Stack
+
+Built as a Flutter mobile application:
+- **Frontend**: Flutter & Dart
+- **Backend & Database**: Firebase
+
+## Team
+
+We are a team of three:
+- **Niraj Chaudhary** - Backend Development
+- **Dharmi Patel** - Presentation
+- **Hitesh Mori (Me)** - Frontend Development
+
+This was a special project - my entry into both Flutter development and hackathons!`,
+        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/fetch_info_cover.jpg?alt=media&token=45f943e4-dce7-41db-a417-83bfa45bdfb5",
+        tags: ["5th Rank", "Flutter", "Dart", "Firebase"],
+        category: "Mobile App",
+        github: "https://github.com/hitesh-mori/Scanner-App---Flutter",
+        preview: "",
+        featured: false,
+        date: "2023",
+    },
     {
         id: "6",
         title: "ChatApp",
-        description: "I completed a project using Flutter and Dart with Firebase as the database.",
+        shortDescription: "A WhatsApp clone built to understand Flutter and Firebase. Features read receipts, send receipts, image sharing, profile viewing, and more.",
+        description: `## Overview
+
+**ChatApp** is a WhatsApp clone that I developed as a **solo project** to understand Flutter and Firebase database integration. This project helped me learn real-time database operations and messaging features.
+
+## Key Features
+
+- **Real-time Messaging**: Instant message delivery and updates
+- **Read Receipts**: See when messages are read
+- **Send Receipts**: Know when messages are delivered
+- **Image Sharing**: Send and receive images in chat
+- **User Profiles**: View profile information of contacts
+- **User Authentication**: Secure login and registration
+- **Online Status**: See when users are online
+
+## Tech Stack
+
+Built as a Flutter mobile application:
+- **Frontend**: Flutter & Dart
+- **Backend & Database**: Firebase (Firestore, Auth, Storage)
+
+## Solo Project
+
+This was a personal learning project where I explored:
+- Firebase Firestore for real-time data
+- Firebase Storage for media files
+- Firebase Authentication for user management
+- Flutter state management and UI design`,
         image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/chat_cover.jpg?alt=media&token=92dbf06c-7a4e-4074-aba8-07dfaa487307",
-        tags: [
-
-            "Flutter",
-            "Dart",
-            "Firebase"
-        ],
-        catagory: "Android App",
+        tags: ["Flutter", "Dart", "Firebase"],
+        category: "Mobile App",
         github: "https://github.com/hitesh-mori/Chat_App",
+        preview: "https://drive.google.com/file/d/1YpKpR40dsVCOEeQ46aZlVnAApt8Jn1Xv/view?usp=sharing",
+        featured: false,
+        date: "2023",
     },
-
-
     {
         id: "7",
         title: "SmartLink",
-        description: "We completed a project using Flutter, Dart, Firebase at Ingenium 5, Ahmedabad University hackathon.",
+        shortDescription: "Ingenium 5.0 | An education platform connecting students, teachers, and teaching organizations. Features doubt posting, teacher ratings, and hiring system.",
+        description: `## Overview
+
+We developed **SmartLink** at **Ingenium 5.0**, Ahmedabad University hackathon. This platform connects students, teachers, and teaching organizations in a comprehensive education ecosystem.
+
+## User Types
+
+The platform supports three types of users:
+- **Student**: Post doubts, rate teachers, and hire tutors
+- **Teacher**: Answer student doubts and build reputation through ratings
+- **Teaching Organization**: View teacher ratings and hire teachers
+
+## Key Features
+
+- **Doubt Posting**: Students can post their academic doubts
+- **Teacher Answers**: Teachers provide solutions and explanations
+- **Rating System**: Students rate teachers based on quality of answers
+- **Teacher Hiring**: Organizations can hire teachers based on ratings
+- **Tuition Booking**: Students can book teachers for personal tuition
+
+## Tech Stack
+
+Built as a Flutter mobile application:
+- **Frontend**: Flutter & Dart
+- **Backend & Database**: Firebase
+
+## Team
+
+We are a team of four:
+- **Niraj Chaudhary** - Backend Development
+- **Milap Patel** - Development Support
+- **Jisan Thobani** - Development Support
+- **Hitesh Mori (Me)** - Frontend Development
+
+We learned many things from this hackathon experience!`,
         image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/smartlink_cover.jpg?alt=media&token=f0861375-43e2-4421-904f-8c32f3e50011",
-        tags: [
-            "Flutter",
-            "Dart",
-            "Firebase",
-        ],
-        catagory: "Android App",
+        tags: ["Flutter", "Dart", "Firebase"],
+        category: "Mobile App",
         github: "https://github.com/hitesh-mori/ingenious-5.0",
+        preview: "https://youtu.be/iiCiRZWN5UU?feature=shared",
+        featured: false,
+        date: "2023",
     },
     {
         id: "8",
-        title: "Video Confirence",
-        description: "I completed a project using Flutter and Dart with Firebase as the database. It allows users to create new meetings, schedule meetings, share screens, and more. This project showcases my skills in mobile app development and backend integration.",
+        title: "Video Conference",
+        shortDescription: "A Zoom-like video conferencing clone. Features include creating/joining meetings, scheduling, in-meeting chat, meeting history, and unique user meeting IDs.",
+        description: `## Overview
+
+**Video Conference** is a **solo project** - a Zoom-like video conferencing application that I built to understand real-time communication and meeting APIs.
+
+## Key Features
+
+- **Create Meeting**: Start instant video meetings with unique room IDs
+- **Join Meeting**: Join existing meetings using meeting codes
+- **Schedule Meeting**: Schedule meetings for future dates and times
+- **In-Meeting Chat**: Chat with participants during the meeting
+- **Meeting History**: View previous meeting records
+- **Unique Meeting ID**: Each user gets a unique personal meeting ID
+- **User Authentication**: Secure login and registration
+
+## Tech Stack
+
+Built as a Flutter mobile application with Zegocloud:
+- **Frontend**: Flutter & Dart
+- **Backend & Database**: Firebase
+- **Video API**: Zegocloud (Meeting SDK)
+
+## Solo Project
+
+This was a personal project where I learned:
+- Real-time video/audio streaming
+- Meeting SDK integration
+- Firebase real-time database for chat
+- User session management`,
         image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/meetwith_cover.jpg?alt=media&token=c56b7aa0-1b9d-4c67-813c-4f7069ef75a4",
-        tags: [
-            "Flutter",
-            "Dart",
-            "Firebase",
-            "Zegocloud"
-
-        ],
-        catagory: "Android App",
+        tags: ["Flutter", "Dart", "Firebase", "Zegocloud"],
+        category: "Mobile App",
         github: "https://github.com/Hitesh123mori/video_meet_App",
+        preview: "https://drive.google.com/file/d/1HuMVta5w8zG60FLOmrhKCoqFbL5hlaQe/view?usp=sharing",
+        featured: false,
+        date: "2023",
     },
-
-
-
-
     {
         id: "9",
         title: "Contact Manager",
-        description: "I completed a project using Flutter and Dart with Firebase as the database, incorporating data structures and algorithms (DSA) for more efficient searching and sorting. It showcases my skills in mobile app development and backend integration.",
-        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/contact_manager_cover.jpg?alt=media&token=b6955d5e-dc5d-44bc-94e5-5b12caa90299",
-        tags: [
-            "Flutter",
-            "Dart",
-            "Firebase"
-        ],
-        catagory: "Android App",
-        github: "https://github.com/hitesh-mori/Contact_Manager",
-    },
+        shortDescription: "A contact management app with efficient storage using Binary Search Tree for fast searching. Features QR code generation for easy contact sharing.",
+        description: `## Overview
 
+**Contact Manager** is a **solo project** that stores contacts efficiently and provides fast search capabilities using data structure algorithms.
+
+## Key Features
+
+- **Efficient Storage**: Contacts stored in optimized data structures
+- **Binary Search Tree**: Fast contact searching using BST algorithm
+- **QR Code Generation**: Generate QR codes based on user details
+- **Contact Sharing**: Share contacts via QR code scanning
+- **Search Optimization**: Quick retrieval even with large contact lists
+- **User-Friendly Interface**: Clean and intuitive contact management
+
+## Tech Stack
+
+Built as a Flutter mobile application:
+- **Frontend**: Flutter & Dart
+- **Backend & Database**: Firebase
+- **Algorithm**: Binary Search Tree for efficient searching
+
+## Solo Project
+
+This project demonstrates:
+- Data Structure implementation in real apps
+- Binary Search Tree for O(log n) search time
+- QR code generation and scanning
+- Firebase integration for data persistence`,
+        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/contact_manager_cover.jpg?alt=media&token=b6955d5e-dc5d-44bc-94e5-5b12caa90299",
+        tags: ["Flutter", "Dart", "Firebase", "DSA"],
+        category: "Mobile App",
+        github: "https://github.com/hitesh-mori/Contact_Manager",
+        preview: "https://drive.google.com/file/d/1CjbVW-11sMCvTLs3DlBGiDFYhaqCB0Xe/view?usp=sharing",
+        featured: false,
+        date: "2023",
+    },
     {
         id: "10",
         title: "FraudEye",
-        description: "We completed a project using Flutter,Dart,Firebase,ML,Python,Flask,at HackNuThon 6.0, Nirma University. ",
-        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/FraudEye_cover.png?alt=media&token=c0ffd030-d6e4-4339-9d4b-697c4bfbfc40",
-        tags: [
-            "Flutter",
-            "Dart",
-            "Firebase",
-            "Python",
-            "ML",
-            "Flask"
-        ],
-        catagory: "Web App",
-        github: "https://github.com/hitesh-mori/FraudEye",
-    },
+        description: `## About
 
+We developed this project at **HackNUThon 6.0**, a hackathon organized by the Computer Society of India at Nirma University.
+
+FraudEye is designed for banks to analyze transactions and detect whether they are fraudulent or not. We used ML/DL models to power the fraud detection system.
+
+## Tech Stack
+- **Frontend:** Flutter
+- **Backend:** Flask, Python
+- **Database:** Firebase
+
+## Team Members
+- **Saumya Ramani** - Backend Developer
+- **Hitesh Mori** - Frontend Developer
+- **Harikrishna Goti** - ML/DL Developer
+- **Dhruv Gohil** - Backend Developer`,
+        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/FraudEye_cover.png?alt=media&token=c0ffd030-d6e4-4339-9d4b-697c4bfbfc40",
+        tags: ["Flutter", "Dart", "Firebase", "Python", "ML", "Flask"],
+        category: "Web",
+        github: "https://github.com/hitesh-mori/FraudEye",
+        preview: "https://youtu.be/daxMIM-yrmw",
+        featured: true,
+        date: "2024",
+    },
     {
         id: "11",
-        title: "Paper2x",
-        description: "We completed a project using Flutter,Dart,Firebase,ML,Python,Flask,at Mined 2025, Nirma University. ",
-        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/Paper2x_cover.png?alt=media&token=2a5b5abb-6922-4144-b8ad-b40737957353",
-        tags: [
-            "Flutter",
-            "Dart",
-            "Firebase",
-            "Python",
-            "ML",
-            "Flask"
-        ],
-        catagory: "Web App",
-        github: "https://github.com/hitesh-mori/Paper2X",
-    },
+        title: "Paper2X",
+        description: `## About
 
+We developed this project at **Mined 2025**, organized by the CSE Department at Nirma University.
+
+Paper2X helps researchers analyze research papers and generate summaries along with talk audio. It uses ML/DL models to extract key insights and convert them into audio format.
+
+## Tech Stack
+- **Frontend:** Flutter, Dart
+- **Backend:** Python
+- **Database:** Firebase
+- **AI/ML:** ML/DL Models
+
+## Team Members
+- **Mihir Patel** - Backend Developer
+- **Milap Patel** - ML Models Developer
+- **Tathya Patel** - ML Models Developer
+- **Hitesh Mori** - Frontend Developer`,
+        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/Paper2x_cover.png?alt=media&token=2a5b5abb-6922-4144-b8ad-b40737957353",
+        tags: ["Flutter", "Dart", "Firebase", "Python", "ML", "Flask"],
+        category: "Web",
+        github: "https://github.com/hitesh-mori/Paper2X",
+        preview: "https://drive.google.com/file/d/111jtR-kV5f7JhN7nkKRmWIBUXsK9gKzO/view?usp=sharing",
+        featured: true,
+        date: "2025",
+    },
     {
         id: "12",
         title: "ConnectWith",
-        description: "I completed a project using Flutter,Dart and Firebase and for efficient suggesting friends and posts i used graph algorithms.",
-        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/connectwith_cover.png?alt=media&token=dd44f39f-79c6-43a4-b48c-3a219915fab0",
-        tags: [
-            "Flutter",
-            "Dart",
-            "Firebase",
-            "Python",
-            "ML",
-            "Flask"
-        ],
-        catagory: "Android App",
-        github: "https://github.com/hitesh-mori/Connect-with",
-    },
+        description: `## About
 
-      {
+ConnectWith is a LinkedIn clone with most of the features of LinkedIn. I developed this project for learning purposes as a solo project.
+
+## Features
+- Create and view profiles
+- Profile view counts
+- Create posts with hashtags
+- Like and comment on posts
+- Follow/Unfollow users
+- Organizations
+- Job posting
+
+## Tech Stack
+- **Frontend:** Flutter, Dart
+- **Backend/Database:** Firebase
+
+## Developer
+- **Hitesh Mori** - Solo Developer`,
+        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/connectwith_cover.png?alt=media&token=dd44f39f-79c6-43a4-b48c-3a219915fab0",
+        tags: ["Flutter", "Dart", "Firebase"],
+        category: "Mobile App",
+        github: "https://github.com/hitesh-mori/Connect-with",
+        preview: "https://drive.google.com/file/d/1Z6pw5QJ3hVCByI7dmHhSvMWa-DCG5pQs/view?usp=sharing",
+        featured: false,
+        date: "2024",
+    },
+    {
         id: "13",
         title: "GOMIQ",
-        description: "We completed a project using Flutter, Dart, JS and MongoDB.",
-        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/GomIQ_cover.png?alt=media&token=bc80433e-9164-4997-b2c8-48eabb2c12a7",
-        tags: [
-            "Flutter",
-            "Dart",
-            "MongoDB",
-            "Python",
-            "ML",
-            "Flask"
-        ],
-        catagory: "Web App",
-        github: "https://github.com/hitesh-mori/gomiq.git",
-    },
+        description: `## About
 
-       {
+We developed this project during our summer internship in 2025. GOMIQ is a ChatGPT-like chatbot application.
+
+## Features
+- Chat with AI chatbot
+- Access all previous chat history
+- Add and manage documents
+- JWT token authentication
+
+## Tech Stack
+- **Frontend:** Flutter, Dart
+- **Backend:** Python, Firebase
+- **AI/ML:** ML/DL Models
+
+## Team Members
+- **Hitesh Mori** - Frontend & Backend Developer
+- **Tirth Gohil** - ML/DL Models Developer`,
+        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/GomIQ_cover.png?alt=media&token=bc80433e-9164-4997-b2c8-48eabb2c12a7",
+        tags: ["Flutter", "Dart", "Firebase", "Python", "ML"],
+        category: "Web",
+        github: "https://github.com/hitesh-mori/gomiq.git",
+        preview: "https://gomiq-chat.web.app/",
+        featured: false,
+        date: "2025",
+    },
+    {
         id: "14",
         title: "FMS",
-        description: "I completed a project using React JS, JS and Firebase.",
-        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/FMS_cover.png?alt=media&token=7bc52345-ea09-456a-8513-6ca0ea9f0e98",
-        tags: [
-            "React JS",
-            "Javascript",
-            "Firebase",
-        ],
-        catagory: "Web App",
-        github: "https://github.com/hitesh-mori/flat-management-system",
-    },
+        description: `## About
 
-     {
+Flat Management System (FMS) - I developed this project using 100% AI within 1 hour to test the ability of AI in building complete applications.
+
+## Features
+- Manage flat resources
+- Parking management
+- User details management
+- Society administration
+
+## Tech Stack
+- **Frontend:** React JS, JavaScript
+- **Backend/Database:** Firebase
+
+## Developer
+- **Hitesh Mori** - Solo Developer (AI-assisted)
+
+*This was a fun project to explore AI's capabilities in rapid application development.*`,
+        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/FMS_cover.png?alt=media&token=7bc52345-ea09-456a-8513-6ca0ea9f0e98",
+        tags: ["React JS", "JavaScript", "Firebase"],
+        category: "Web",
+        github: "https://github.com/hitesh-mori/flat-management-system",
+        preview: "https://flat-management-system.vercel.app/",
+        featured: false,
+        date: "2024",
+    },
+    {
         id: "15",
         title: "OneFlow",
-        description: "We completed a project using Flutter, dart, Node js, Express js and MongoDB.",
-        image: "http://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/oneflow_cover_image.png?alt=media&token=42dad4ed-8535-4d3f-b46b-dba396f8df90",
-        tags: [
-            "Flutter",
-            "Dart",
-            "Node JS",
-            "Express JS",
-            "MongoDB",
-            "Docker",
-            "Javascript",
-        ],
-        catagory: "Web App",
+        shortDescription: "Enterprise resource planning system built at Odoo Hackathon, IIT Gandhinagar. Manages projects, tasks, sales orders, and expenses with multi-user roles.",
+        description: `## About
+
+We developed this project at the **Odoo Hackathon** at IIT Gandhinagar. OneFlow is an enterprise resource planning system with multi-user roles.
+
+## Features
+- **Four User Roles:** Developer, Manager, Sales Department, Admin
+- **Project Management:** Manager creates projects and assigns developers with tasks
+- **Sales Management:** Sales department generates purchase orders and sales orders
+- **Expense Management:** Developer creates expense → Manager approves → Admin approves → Budget passed
+
+## Tech Stack
+- **Frontend:** Flutter, Dart
+- **Backend:** Node.js, Express.js, Python
+- **Database:** MongoDB
+- **DevOps:** Docker
+
+## Team Members
+- **Hitesh Mori** - Frontend Developer
+- **Niraj Chaudhary** - Backend Developer
+- **Milap Patel** - Backend Developer
+- **Virendra Raol** - Backend Developer`,
+        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/oneflow_cover_image.png?alt=media&token=42dad4ed-8535-4d3f-b46b-dba396f8df90",
+        tags: ["Flutter", "Dart", "Node.js", "Express.js", "MongoDB", "Docker", "Python"],
+        category: "Web",
         github: "https://github.com/hitesh-mori/oneflow-frontend.git",
+        preview: "https://drive.google.com/file/d/12HrHRe86wJE4LlthuELcuuLLvE1SSma3/view?usp=drive_link",
+        featured: true,
+        date: "2024",
     }
+];
 
-]
+// Achievements
+export const achievements = [
+    {
+        id: 1,
+        title: "2nd Rank - Tic Tech Toe 2023",
+        organization: "DAIICT - IFECT Club",
+        date: "2023",
+        description: "Secured 2nd position in Tic Tech Toe 2023 organized by DAIICT IFECT Club. Team of four: I handled the frontend, Niraj Chaudhary integrated APIs to frontend, Mihir Patel developed the backend, and Kenil Patel (team leader) managed UI/UX and presentation. Check it out in Projects and read my complete blog about it!",
+        project: "MedEase",
+        icon: "trophy",
+    },
+    {
+        id: 2,
+        title: "4th Rank - TicTechToe 2024",
+        organization: "DAIICT - IFECT Club",
+        date: "2024",
+        description: "Secured 4th rank in TicTechToe 2024. A bit far from winning but we enjoyed the hackathon! Team members: Niraj Chaudhary (backend), Jisan Thobani (AI/ML), Ankit Pandoor, and I handled the frontend. An AI-powered learning management system. View it in Projects!",
+        project: "TeachAssists",
+        icon: "medal",
+    },
+    {
+        id: 3,
+        title: "6th Rank - Hackout 2024",
+        organization: "DAIICT",
+        date: "2024",
+        description: "Secured 6th rank in Hackout 2024. Team members: Milap Patel (AI/ML), Niraj Chaudhary (API integration & backend), Ankit Pandoor, and I handled the frontend.",
+        project: "Khedut Mitra",
+        icon: "star",
+    },
+    {
+        id: 4,
+        title: "5th Rank - HackNUThon 4.0",
+        organization: "Nirma University",
+        date: "2023",
+        description: "My first hackathon! Secured 5th rank as freshers in second year. We developed the full project from scratch. Team members: Niraj Chaudhary (backend), Dharmi Patel (presentation), and I handled the frontend.",
+        project: "Scanner App",
+        icon: "medal",
+    },
+    {
+        id: 5,
+        title: "7th Rank - Hackout 2023",
+        organization: "DAIICT",
+        date: "2023",
+        description: "My first hackathon at another college! Great experience with sleepless nights. As freshers, we secured 7th rank. Team members: Mihir Patel (backend with Django), Niraj Chaudhary (API integration), Parthiv Vekariya, and I handled the frontend.",
+        project: "EduShakha",
+        icon: "star",
+    },
+];
 
+// Coding Profiles
+export const codingProfiles = [
+    {
+        platform: "LeetCode",
+        username: "harshmori0521",
+        url: "https://leetcode.com/harshmori0521",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png",
+        color: "#FFA116",
+        stats: {
+            solved: "850+",
+        },
+    },
+    {
+        platform: "Codeforces",
+        username: "rajput_harsh210",
+        url: "https://codeforces.com/profile/rajput_harsh210",
+        logo: "https://cdn.iconscout.com/icon/free/png-256/free-code-forces-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-2-pack-logos-icons-3029920.png",
+        color: "#1F8ACB",
+        stats: {
+            solved: "300+",
+        },
+    },
+    {
+        platform: "GitHub",
+        username: "hitesh-mori",
+        url: "https://github.com/hitesh-mori",
+        logo: "https://img.icons8.com/ios-filled/500/ffffff/github.png",
+        color: "#6e5494",
+        stats: {
+            contributions: "1000+",
+        },
+    },
+    {
+        platform: "CodeStudio",
+        username: "harshmori",
+        url: "https://www.naukri.com/code360/profile/3f8e3b01-101e-4b8b-a181-dd2a59343dd7",
+        logo: "https://files.codingninjas.in/new-cn-logos-1-1711622387.svg",
+        color: "#F66C3B",
+        stats: {
+            solved: "50+",
+        },
+    },
+    {
+        platform: "GeeksforGeeks",
+        username: "harshmongl2",
+        url: "https://www.geeksforgeeks.org/user/harshmongl2/",
+        logo: "https://media.geeksforgeeks.org/gfg-gg-logo.svg",
+        color: "#2F8D46",
+        stats: {
+            solved: "100+",
+        },
+    },
+];
 
+// Blog Posts
+// For images in content, use markdown syntax: ![Alt text](image-url)
+// You can use any publicly accessible image URL
+export const blogPosts = [];
+
+// Social Links
+export const socialLinks = [
+    {
+        name: "GitHub",
+        url: "https://github.com/hitesh-mori",
+        icon: "github",
+    },
+    {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/hitesh-mori-562673273",
+        icon: "linkedin",
+    },
+    {
+        name: "Email",
+        url: "mailto:hiteshvmori@gmail.com",
+        icon: "email",
+    },
+];

@@ -1,151 +1,260 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { FaGithub, FaExternalLinkAlt, FaEye } from 'react-icons/fa';
 
 
-const Button = styled.button`
-    display: none;
-    width: 100%;
-    padding: 10px;
-    background-color: ${({ theme }) => theme.white};
-    color: ${({ theme }) => theme.text_black};
-    font-size: 14px;
-    font-weight: 700;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.8s ease-in-out;
-`
-const Card = styled.div`
-    width: 330px;
-    height: 490px;
-    background-color: ${({ theme }) => theme.card};
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
-    overflow: hidden;
-    padding: 26px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    transition: all 0.5s ease-in-out;
-    &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
-        filter: brightness(1.1);
-    }
-    &:hover ${Button} {
-        display: block;
-    }
-`
+const Card = styled(motion.div)`
+  background: ${({ theme }) => theme.card};
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid ${({ theme }) => theme.border};
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  will-change: transform;
+
+  &:hover {
+    border-color: ${({ theme }) => theme.borderHover};
+    transform: translateY(-8px);
+    box-shadow: ${({ theme }) => theme.shadowGlow};
+  }
+
+  &:hover .card-image {
+    transform: scale(1.05);
+  }
+`;
+
+const ImageContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+`;
 
 const Image = styled.img`
   width: 100%;
-  height: 180px;
-  background-color: ${({ theme }) => theme.white};
-  border-radius: 10px;
-  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
-  object-fit: cover; /* Ensures the image covers the container without distortion */
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 `;
 
+const Content = styled.div`
+  padding: 20px;
+`;
+
+const Category = styled.span`
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: ${({ theme }) => theme.primary};
+  background: ${({ theme }) => `${theme.primary}15`};
+  padding: 4px 10px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+`;
+
+const Title = styled.h3`
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_primary};
+  margin: 12px 0 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+`;
+
+const Description = styled.p`
+  font-size: 0.9rem;
+  color: ${({ theme }) => theme.text_secondary};
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 16px;
+`;
 
 const Tags = styled.div`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 4px;
-`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+`;
 
 const Tag = styled.span`
-    font-size: 12px;
-    font-weight: 400;
+  font-size: 0.75rem;
+  color: ${({ theme }) => theme.text_muted};
+  background: ${({ theme }) => theme.bgLight};
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid ${({ theme }) => theme.border};
+`;
+
+const Footer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid ${({ theme }) => theme.border};
+`;
+
+const Date = styled.span`
+  font-size: 0.8rem;
+  color: ${({ theme }) => theme.text_muted};
+`;
+
+const Actions = styled.div`
+  display: flex;
+  gap: 8px;
+`;
+
+const ActionButton = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: ${({ theme }) => theme.text_secondary};
+  background: ${({ theme }) => theme.bgLight};
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid ${({ theme }) => theme.border};
+
+  &:hover {
     color: ${({ theme }) => theme.primary};
-    background-color: ${({ theme }) => theme.primary + 15};
-    padding: 2px 8px;
-    border-radius: 10px;
-`
+    border-color: ${({ theme }) => theme.primary};
+    transform: translateY(-2px);
+  }
 
-const Details = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    padding: 0px 2px;
-`
-const Title = styled.div`
-    font-size: 20px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_secondary};
-    overflow: hidden;
-    display: -webkit-box;
-    max-width: 100%;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-`
+  &:focus-visible {
+    outline: 2px solid ${({ theme }) => theme.primary};
+    outline-offset: 2px;
+  }
+`;
 
-const Date = styled.div`
-    font-size: 12px;
-    margin-left: 2px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
-    @media only screen and (max-width: 768px){
-        font-size: 10px;
-    }
-`
+const ViewButton = styled.button`
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: white;
+  background: ${({ theme }) => theme.primaryGradient};
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+  }
 
-const Description = styled.div`
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 99};
-    overflow: hidden;
-    margin-top: 8px;
-    display: -webkit-box;
-    max-width: 100%;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
-`
+  &:focus-visible {
+    outline: 2px solid ${({ theme }) => theme.primary};
+    outline-offset: 2px;
+  }
+`;
 
-const Members = styled.div`
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-`
-const Avatar = styled.img`
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    margin-left: -10px;
-    background-color: ${({ theme }) => theme.white};
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border: 3px solid ${({ theme }) => theme.card};
-`
+const OpenButton = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: white;
+  background: ${({ theme }) => theme.primaryGradient};
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
 
-const ProjectCards = ({project,setOpenModal}) => {
-    return (
-        <Card onClick={() => setOpenModal({state: true, project: project})}>
-            <Image src={project.image}/>
-            <Tags>
-                {project.tags?.map((tag, index) => (
-                <Tag>{tag}</Tag>
-                ))}
-            </Tags>
-            <Details>
-                <Title>{project.title}</Title>
-                <Date>{project.date}</Date>
-                <Description>{project.description}</Description>
-            </Details>
-            <Members>
-                {project.member?.map((member) => (
-                    <Avatar src={member.img}/>
-                ))}
-            </Members>
-            {/* <Button>View Project</Button> */}
-        </Card>
-    )
-}
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+  }
 
-export default ProjectCards
+  &:focus-visible {
+    outline: 2px solid ${({ theme }) => theme.primary};
+    outline-offset: 2px;
+  }
+`;
+
+const ProjectCard = ({ project, setOpenModal }) => {
+  return (
+    <Card
+      whileHover={{ scale: 1.02 }}
+      transition={{ duration: 0.2 }}
+      onClick={() => setOpenModal({ state: true, project: project })}
+      style={{ cursor: 'pointer' }}
+    >
+      <ImageContainer>
+        <Image
+          className="card-image"
+          src={project.image}
+          alt={project.title}
+          loading="lazy"
+        />
+      </ImageContainer>
+
+      <Content>
+        <Category>{project.category}</Category>
+        <Title>{project.title}</Title>
+        <Description>
+          {project.shortDescription ||
+           (project.description.includes('##')
+             ? project.description.split('\n').find(line => line && !line.startsWith('#'))?.replace(/\*\*/g, '').trim() || project.description.substring(0, 150)
+             : project.description)}
+        </Description>
+        <Tags>
+          {project.tags.slice(0, 4).map((tag, index) => (
+            <Tag key={index}>{tag}</Tag>
+          ))}
+          {project.tags.length > 4 && (
+            <Tag>+{project.tags.length - 4}</Tag>
+          )}
+        </Tags>
+        <Footer>
+          <Date>{project.date}</Date>
+          <Actions>
+            <ActionButton
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${project.title} source code on GitHub`}
+            >
+              <FaGithub />
+              Code
+            </ActionButton>
+            {project.preview ? (
+              <OpenButton
+                href={project.preview}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Open ${project.title} preview`}
+              >
+                <FaExternalLinkAlt />
+                Open
+              </OpenButton>
+            ) : (
+              <ViewButton
+                onClick={() => setOpenModal({ state: true, project: project })}
+                aria-label={`View ${project.title} details`}
+              >
+                <FaEye />
+                View
+              </ViewButton>
+            )}
+          </Actions>
+        </Footer>
+      </Content>
+    </Card>
+  );
+};
+
+export default ProjectCard;
