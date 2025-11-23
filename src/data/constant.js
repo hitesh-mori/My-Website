@@ -862,8 +862,8 @@ export const blogPosts = [
         slug: "my-hackathon-journey",
         title: "My Hackathon Journey: From Nervous Freshman to Top Ranker",
         excerpt: "9 hackathons, countless sleepless nights, and lessons that shaped me as a developer. Here's what I learned about building fast, pitching well, and standing out.",
-        date: "2025-01-15",
-        readTime: "8 min read",
+        date: "2025-11-19",
+        readTime: "5 min read",
         image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/hackthon_blog.jpg?alt=media&token=c6f831c9-1aaf-46af-9b94-0d586c5188cc",
         tags: ["Hackathon", "Experience", "Tips"],
         content: `# My Hackathon Journey: 10 Hackathons, Sleepless Nights, and Everything I Learned
