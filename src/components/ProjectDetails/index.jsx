@@ -62,9 +62,7 @@ const CloseButton = styled.button`
   z-index: 10;
 
   &:hover {
-    background: ${({ theme }) => theme.primary};
-    color: white;
-    transform: rotate(90deg);
+    border-color: ${({ theme }) => theme.borderHover};
   }
 `;
 
@@ -194,11 +192,9 @@ const Button = styled.a`
   &:first-child {
     background: ${({ theme }) => theme.primaryGradient};
     color: white;
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
 
     &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5);
+      /* No hover effects - cursor only */
     }
   }
 
@@ -208,8 +204,7 @@ const Button = styled.a`
     border: 2px solid ${({ theme }) => theme.primary};
 
     &:hover {
-      background: ${({ theme }) => `${theme.primary}15`};
-      transform: translateY(-3px);
+      /* No hover effects - cursor only */
     }
   }
 `;

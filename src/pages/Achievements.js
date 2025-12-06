@@ -99,16 +99,14 @@ const AchievementCard = styled(motion.div)`
     right: 0;
     height: 3px;
     background: ${({ $type, theme }) => {
-      if ($type === 'trophy') return 'linear-gradient(90deg, #fbbf24 0%, #f59e0b 100%)';
-      if ($type === 'medal') return 'linear-gradient(90deg, #94a3b8 0%, #64748b 100%)';
-      return theme.primaryGradient;
-    }};
+    if ($type === 'trophy') return '#f59e0b';
+    if ($type === 'medal') return '#94a3b8';
+    return theme.primary;
+  }};
   }
 
   &:hover {
-    border-color: ${({ theme }) => theme.primary}40;
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px ${({ theme }) => theme.primary}15;
+    border-color: ${({ theme }) => theme.borderHover};
   }
 `;
 
@@ -127,9 +125,9 @@ const AchievementIcon = styled.div`
   height: 48px;
   border-radius: 12px;
   background: ${({ $type }) => {
-    if ($type === 'trophy') return 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)';
-    if ($type === 'medal') return 'linear-gradient(135deg, #94a3b8 0%, #64748b 100%)';
-    return 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)';
+    if ($type === 'trophy') return '#f59e0b';
+    if ($type === 'medal') return '#94a3b8';
+    return '#2563EB';
   }};
   color: white;
   font-size: 1.2rem;

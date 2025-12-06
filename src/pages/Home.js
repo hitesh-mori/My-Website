@@ -305,11 +305,9 @@ const PrimaryButton = styled.a`
   font-weight: 600;
   border-radius: 12px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
 
   &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5);
+    /* No hover effects - cursor only */
   }
 `;
 
@@ -327,8 +325,7 @@ const SecondaryButton = styled.a`
   transition: all 0.3s ease;
 
   &:hover {
-    background: ${({ theme }) => `${theme.primary}15`};
-    transform: translateY(-3px);
+    /* No hover effects - cursor only */
   }
 `;
 
@@ -355,10 +352,7 @@ const SocialIcon = styled.a`
   border: 1px solid ${({ theme }) => theme.border};
 
   &:hover {
-    color: ${({ theme }) => theme.primary};
-    border-color: ${({ theme }) => theme.primary};
-    transform: translateY(-3px);
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+    border-color: ${({ theme }) => theme.borderHover};
   }
 `;
 
@@ -541,13 +535,11 @@ const SkillPill = styled(motion.div)`
   will-change: transform;
 
   &:hover {
-    border-color: ${({ theme }) => theme.primary};
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.12);
+    border-color: ${({ theme }) => theme.borderHover};
   }
 
   &:hover img {
-    transform: scale(1.1);
+    /* No image transform */
   }
 `;
 
@@ -601,17 +593,15 @@ const ProfileCard = styled(motion.a)`
     left: 0;
     right: 0;
     height: 3px;
-    background: ${({ $color }) => $color || '#6366f1'};
+    background: ${({ $color }) => $color || '#2563EB'};
   }
 
   &:hover {
-    border-color: ${({ $color }) => $color || '#6366f1'}60;
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px ${({ $color }) => $color || '#6366f1'}20;
+    /* No hover effects - cursor only */
   }
 
   &:focus-visible {
-    outline: 2px solid ${({ $color }) => $color || '#6366f1'};
+    outline: 2px solid ${({ $color }) => $color || '#2563EB'};
     outline-offset: 2px;
   }
 `;
@@ -678,7 +668,7 @@ const ProfileStat = styled.div`
 const ProfileStatValue = styled.div`
   font-size: 1rem;
   font-weight: 700;
-  color: ${({ $color }) => $color || '#6366f1'};
+  color: ${({ $color }) => $color || '#2563EB'};
   margin-bottom: 2px;
 `;
 
@@ -715,8 +705,6 @@ const NewsCard = styled(motion.div)`
 
   &:hover {
     border-color: ${({ theme }) => theme.borderHover};
-    transform: translateY(-4px);
-    box-shadow: ${({ theme }) => theme.shadowGlow};
   }
 `;
 
@@ -830,8 +818,7 @@ const ViewAllButton = styled(motion.a)`
   transition: all 0.3s ease;
 
   &:hover {
-    background: ${({ theme }) => `${theme.primary}15`};
-    transform: translateY(-3px);
+    /* No hover effects - cursor only */
   }
 `;
 
@@ -882,7 +869,7 @@ const Home = ({ openModal, setOpenModal }) => {
       <HeroSection>
         {/* Floating background shapes */}
         <FloatingShape
-          $color="#6366f1"
+          $color="#2563EB"
           style={{ width: '300px', height: '300px', top: '10%', left: '5%' }}
           animate={{ x: [0, 30, 0], y: [0, -30, 0] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
@@ -926,7 +913,7 @@ const Home = ({ openModal, setOpenModal }) => {
             {'    '});
           </TypedLine>
           <TypedLine $delay="4.3s" $duration="0.3s">
-            {'  }{'}'}
+            {'  }'}
           </TypedLine>
           <TypedLine $delay="4.5s" $duration="0.3s">
             {'}'}

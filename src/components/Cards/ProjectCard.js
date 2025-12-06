@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { FaGithub, FaExternalLinkAlt, FaEye } from 'react-icons/fa';
 
 
@@ -9,18 +10,16 @@ const Card = styled(motion.div)`
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid ${({ theme }) => theme.border};
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease;
   position: relative;
   will-change: transform;
 
   &:hover {
     border-color: ${({ theme }) => theme.borderHover};
-    transform: translateY(-8px);
-    box-shadow: ${({ theme }) => theme.shadowGlow};
   }
 
   &:hover .card-image {
-    transform: scale(1.05);
+    /* No image scale */
   }
 `;
 
@@ -128,7 +127,6 @@ const ActionButton = styled.a`
   &:hover {
     color: ${({ theme }) => theme.primary};
     border-color: ${({ theme }) => theme.primary};
-    transform: translateY(-2px);
   }
 
   &:focus-visible {
@@ -152,8 +150,8 @@ const ViewButton = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    /* No shadow */
+    opacity: 0.9;
   }
 
   &:focus-visible {
@@ -177,8 +175,8 @@ const OpenButton = styled.a`
   border: none;
 
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    /* No shadow */
+    opacity: 0.9;
   }
 
   &:focus-visible {
@@ -190,8 +188,6 @@ const OpenButton = styled.a`
 const ProjectCard = ({ project, setOpenModal }) => {
   return (
     <Card
-      whileHover={{ scale: 1.02 }}
-      transition={{ duration: 0.2 }}
       onClick={() => setOpenModal({ state: true, project: project })}
       style={{ cursor: 'pointer' }}
     >
@@ -209,9 +205,9 @@ const ProjectCard = ({ project, setOpenModal }) => {
         <Title>{project.title}</Title>
         <Description>
           {project.shortDescription ||
-           (project.description.includes('##')
-             ? project.description.split('\n').find(line => line && !line.startsWith('#'))?.replace(/\*\*/g, '').trim() || project.description.substring(0, 150)
-             : project.description)}
+            (project.description.includes('##')
+              ? project.description.split('\n').find(line => line && !line.startsWith('#'))?.replace(/\*\*/g, '').trim() || project.description.substring(0, 150)
+              : project.description)}
         </Description>
         <Tags>
           {project.tags.slice(0, 4).map((tag, index) => (
@@ -234,15 +230,26 @@ const ProjectCard = ({ project, setOpenModal }) => {
               Code
             </ActionButton>
             {project.preview ? (
-              <OpenButton
-                href={project.preview}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Open ${project.title} preview`}
-              >
-                <FaExternalLinkAlt />
-                Open
-              </OpenButton>
+              project.preview.startsWith('/') ? (
+                <OpenButton
+                  as={Link}
+                  to={project.preview}
+                  aria-label={`Open ${project.title} preview`}
+                >
+                  <FaExternalLinkAlt />
+                  Open
+                </OpenButton>
+              ) : (
+                <OpenButton
+                  href={project.preview}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open ${project.title} preview`}
+                >
+                  <FaExternalLinkAlt />
+                  Open
+                </OpenButton>
+              )
             ) : (
               <ViewButton
                 onClick={() => setOpenModal({ state: true, project: project })}

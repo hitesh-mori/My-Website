@@ -41,8 +41,7 @@ const NavContainer = styled.div`
   transition: all 0.3s ease;
 
   &:hover {
-    border-color: ${({ theme }) => theme.borderHover};
-    box-shadow: ${({ theme }) => theme.shadowGlow};
+    /* No hover effects */
   }
 
   @media (max-width: 768px) {
@@ -58,7 +57,7 @@ const Logo = styled(Link)`
   transition: all 0.3s ease;
 
   &:hover {
-    transform: scale(1.05);
+    /* No hover effects */
   }
 `;
 
@@ -71,8 +70,7 @@ const LogoImage = styled.img`
   transition: all 0.3s ease;
 
   ${Logo}:hover & {
-    border-color: ${({ theme }) => theme.primary};
-    box-shadow: 0 0 15px ${({ theme }) => theme.primary}50;
+    /* No hover effects */
   }
 
   @media (max-width: 768px) {
@@ -108,7 +106,6 @@ const NavItem = styled(Link)`
   &:hover {
     color: ${({ theme }) => theme.primary};
     background: ${({ theme }) => `${theme.primary}10`};
-    transform: translateY(-2px);
   }
 
   &::after {
@@ -141,11 +138,9 @@ const GitHubButton = styled.a`
   font-weight: 600;
   border-radius: 20px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
 
   &:hover {
-    transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+    /* No hover effects - cursor only */
   }
 
   @media (max-width: 768px) {
@@ -167,8 +162,7 @@ const MobileMenuButton = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    background: ${({ theme }) => `${theme.primary}15`};
-    color: ${({ theme }) => theme.primary};
+    /* No hover effects - cursor only */
   }
 `;
 
@@ -273,10 +267,7 @@ const ThemeToggle = styled.button`
   margin-right: 12px;
 
   &:hover {
-    background: ${({ theme }) => `${theme.primary}15`};
     border-color: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.primary};
-    transform: rotate(15deg);
   }
 
   @media (max-width: 768px) {
@@ -344,9 +335,7 @@ const MobileThemeButton = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    background: ${({ theme }) => `${theme.primary}15`};
-    border-color: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.primary};
+    /* No hover effects - cursor only */
   }
 `;
 

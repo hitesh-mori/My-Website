@@ -4,6 +4,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* Remove tap highlight on mobile */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 html {
@@ -35,28 +38,50 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #6366f1;
+  background: #2563EB;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #8b5cf6;
+  background: #3b82f6;
 }
 
 /* Selection */
 ::selection {
-  background: rgba(99, 102, 241, 0.3);
+  background: rgba(37, 99, 235, 0.3);
   color: #f8fafc;
 }
 
 /* Smooth transitions for links */
 a {
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-/* Remove default button styles */
+a:focus,
+a:active {
+  outline: none;
+}
+
+/* Remove default button styles and highlights */
 button {
   font-family: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  border: none;
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
+/* Remove focus outline from all interactive elements */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
 }
 
 /* Improve image rendering */
@@ -85,9 +110,12 @@ img {
 
 /* Loading animation */
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.5;
   }
@@ -99,6 +127,7 @@ img {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -107,7 +136,7 @@ img {
 
 /* Gradient text helper */
 .gradient-text {
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+  background: #2563EB;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -122,12 +151,13 @@ img {
 
 /* Focus visible for accessibility */
 :focus-visible {
-  outline: 2px solid #6366f1;
+  outline: 2px solid #2563EB;
   outline-offset: 2px;
 }
 
 /* Reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {

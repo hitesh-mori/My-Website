@@ -1,0 +1,148 @@
+    {
+        id: "blinklock-guide",
+        slug: "blinklock-user-guide",
+        title: "User Guide for BlinkLock",
+        excerpt: "Complete user guide for BlinkLock - from installation and permissions to advanced features like Study Mode and Custom Rules.",
+        date: "2025-12-06",
+        readTime: "10 min read",
+        image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/blinklock-coverimage.png?alt=media&token=04bead56-048f-4ca9-bfa9-f3c1353e69f1",
+        tags: ["User Guide", "BlinkLock", "Manual"],
+        content: `# User Guide for BlinkLock
+
+[Download App](/products/blinklock)
+
+---
+
+## About the Application
+
+BlinkLock is an intelligent mobile application that uses advanced eye detection and face recognition to protect your sleep, enhance your study sessions, and provide smart screen management. The app automatically locks your phone or triggers alerts based on eye closure and face detection.
+
+---
+
+## Installation
+
+Since the app is not yet on the Play Store, you might face a **Google Play Protect** warning while installing the APK.
+
+### How to Fix Play Protect Warning:
+
+1. Go to **Play Store** → Click your **Profile Icon**
+2. Select **Play Protect**
+3. Click the **Settings** (gear) icon at top right
+4. Turn **OFF** "Scan apps with Play Protect"
+5. Now install the APK again - it will install successfully!
+6. You can turn Play Protect back on after installation
+
+![Installation Error](/product/blinklock/installation%201.jpeg)
+
+![Play Protect Option](/product/blinklock/installation%202.jpeg)
+![Play Protect Settings](/product/blinklock/installation%203.jpeg)
+![Turn Off Scan](/product/blinklock/installation%204.jpeg)
+
+---
+
+## Privacy & Permissions
+
+**Your Privacy Matters**
+
+We do not store any data in the cloud. Your data stays on your device. We do not collect any personal information. All processing (Face/Eye detection) runs locally.
+
+![Permissions](/product/blinklock/permissions.jpeg)
+
+### Required Permissions:
+
+**Device Admin**
+- Required to lock the screen automatically
+- **Important:** To uninstall the app, you must REVOKE this permission first!
+
+**Accessibility**
+- Required to detect user interactions (screen touches) to keep the screen awake
+
+**Camera**
+- Required for monitoring eye and face detection
+
+You can revoke these permissions anytime from device settings.
+
+---
+
+## Functionalities
+
+![Three Modes](/product/blinklock/modes.jpeg)
+
+### Three Smart Modes:
+
+**Sleep Mode**
+- **For:** When you accidentally fall asleep while watching movies
+- **Action:** Automatically locks phone if face not visible or eyes closed
+- **Why:** Prevents battery drain and accidental touches
+
+**Study Mode**
+- **For:** Students and professionals
+- **Action:** Plays an alarm to wake you up when you doze off
+- **Why:** Complete your important tasks without wasted time
+
+**Custom Mode**
+- **Define your own rules!**
+- **Triggers:** Screen not touched, Face not detected, Eyes closed
+- **Actions:** Play Alarm, Lock Phone, Notify, Vibrate
+
+---
+
+## Rules Tab
+
+![Rule 1](/product/blinklock/rule%201.jpeg)
+![Rule 2](/product/blinklock/rule%202.jpeg)
+
+### Customize Your Rules
+
+In the Rules tab, you have complete control over triggers and actions:
+
+- **Set Custom Triggers:** Define when the app should react (eyes closed, face not detected, screen not touched)
+- **Choose Actions:** Decide what happens (alarm, lock, vibrate, notification)
+- **Adjust Response Time:** Control how fast the app reacts to triggers
+
+**Example:** Set a rule to "Play Alarm when Eyes Closed for 10 seconds"
+
+---
+
+## Monitoring
+
+![Monitoring 1](/product/blinklock/monitoring%201.jpeg)
+![Monitoring 2](/product/blinklock/monitoring%202.jpeg)
+
+### How Monitoring Works
+
+- **Background Running:** Once monitoring starts, close the app and lock your phone - BlinkLock continues working in the background
+- **Changing Settings:** To change Mode, Alarm, or Response Time, you must **STOP** monitoring first
+
+### Custom Mode Monitoring:
+
+![Custom Monitoring](/product/blinklock/custom%20monitoring.jpeg)
+
+**Note:** Ensure Custom Mode is active for your custom rules to work
+
+---
+
+## Home Screen Widget
+
+![Widget Selection](/product/blinklock/widget%201.jpeg)
+![BlinkLock Widget](/product/blinklock/widget%202.jpeg)
+![Widget Added](/product/blinklock/widget%203.jpeg)
+
+### Quick Control Widget
+
+Control BlinkLock directly from your home screen without opening the app!
+
+**Setup Steps:**
+1. **Long press** on your Home Screen
+2. Select **Widgets** from the menu
+3. Scroll and find **BlinkLock** in the list
+4. **Drag and drop** it to your screen
+
+**Widget Benefits:** Toggle monitoring ON/OFF instantly without opening the app. Perfect for quick access!
+
+---
+
+## Thank you for using BlinkLock!
+
+Stay safe, stay productive, and enjoy better sleep!`
+    },

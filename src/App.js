@@ -10,6 +10,8 @@ import { AnimatePresence } from 'framer-motion';
 // Direct imports for better initial load
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import Products from "./pages/Products";
+import ProductDetail from "./pages/ProductDetail";
 import Experience from "./pages/Experience";
 import Achievements from "./pages/Achievements";
 import Blog from "./pages/Blog";
@@ -95,6 +97,8 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home openModal={openModal} setOpenModal={setOpenModal} />} />
                 <Route path="/projects" element={<Projects openModal={openModal} setOpenModal={setOpenModal} />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/products/:slug" element={<ProductDetail />} />
                 <Route path="/experience" element={<Experience />} />
                 <Route path="/achievements" element={<Achievements />} />
                 <Route path="/blog" element={<Blog />} />

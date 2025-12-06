@@ -71,9 +71,7 @@ const SocialLink = styled.a`
   border: 1px solid ${({ theme }) => theme.border};
 
   &:hover {
-    color: white;
-    background: ${({ theme }) => theme.primary};
-    transform: translateY(-3px);
+    border-color: ${({ theme }) => theme.borderHover};
   }
 `;
 
@@ -100,7 +98,6 @@ const FooterLink = styled(Link)`
 
   &:hover {
     color: ${({ theme }) => theme.primary};
-    transform: translateX(5px);
   }
 `;
 
@@ -156,7 +153,7 @@ const Footer = () => {
           <LinksSection>
             <SectionTitle>Quick Links</SectionTitle>
             <LinksList>
-              {navLinks.slice(0, 4).map((link) => (
+              {navLinks.slice(0, 5).map((link) => (
                 <FooterLink key={link.path} to={link.path}>
                   {link.name}
                 </FooterLink>

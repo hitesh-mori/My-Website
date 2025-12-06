@@ -15,7 +15,7 @@ const Container = styled.div`
 
 const Section = styled.section`
   padding: 40px 24px 100px;
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
 `;
 
@@ -37,7 +37,6 @@ const BackButton = styled(motion.button)`
   &:hover {
     border-color: ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.primary};
-    transform: translateX(-5px);
   }
 `;
 
@@ -102,6 +101,50 @@ const Content = styled(motion.div)`
   font-size: 1.05rem;
   line-height: 1.8;
 
+  /* Override inline styles for HTML content to respect theme */
+  div[style*="color"] {
+    color: ${({ theme }) => theme.text_secondary} !important;
+  }
+
+  h1[style], h2[style], h3[style], h4[style], h5[style], h6[style] {
+    color: ${({ theme }) => theme.text_primary} !important;
+  }
+
+  div[style*="background"] {
+    background: ${({ theme }) => theme.card} !important;
+    border-color: ${({ theme }) => theme.border} !important;
+  }
+
+  p[style*="color"] {
+    color: ${({ theme }) => theme.text_secondary} !important;
+  }
+
+  span[style*="color"] {
+    color: ${({ theme }) => theme.text_secondary} !important;
+  }
+
+  em[style*="color"] {
+    color: ${({ theme }) => theme.text_muted} !important;
+  }
+
+  /* Links in HTML content */
+  a[style] {
+    color: ${({ theme }) => theme.primary} !important;
+  }
+
+  /* List items with inline styles */
+  li[style*="color"] {
+    color: ${({ theme }) => theme.text_secondary} !important;
+  }
+
+  ol[style], ul[style] {
+    color: ${({ theme }) => theme.text_secondary} !important;
+  }
+
+  strong[style*="color"] {
+    color: ${({ theme }) => theme.text_primary} !important;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     color: ${({ theme }) => theme.text_primary};
     margin: 40px 0 20px;
@@ -116,9 +159,11 @@ const Content = styled(motion.div)`
     border-bottom: 2px solid ${({ theme }) => theme.border};
   }
   h3 { font-size: 1.3rem; }
+  h4 { font-size: 1.1rem; }
 
   p {
     margin-bottom: 20px;
+    color: ${({ theme }) => theme.text_secondary};
   }
 
   a {
@@ -129,6 +174,7 @@ const Content = styled(motion.div)`
 
     &:hover {
       text-decoration: underline;
+      opacity: 0.8;
     }
   }
 
@@ -180,10 +226,12 @@ const Content = styled(motion.div)`
   ul, ol {
     margin: 20px 0;
     padding-left: 24px;
+    color: ${({ theme }) => theme.text_secondary};
 
     li {
       margin-bottom: 12px;
       padding-left: 8px;
+      color: ${({ theme }) => theme.text_secondary};
     }
   }
 
@@ -208,6 +256,7 @@ const Content = styled(motion.div)`
       padding: 14px 16px;
       text-align: left;
       border-bottom: 1px solid ${({ theme }) => theme.border};
+      color: ${({ theme }) => theme.text_secondary};
     }
 
     th {
@@ -374,6 +423,13 @@ const BlogPost = () => {
     });
   };
 
+  // Helper function to detect if content is HTML
+  const isHtmlContent = (content) => {
+    if (!content) return false;
+    // Check if content contains HTML tags
+    return /<[a-z][\s\S]*>/i.test(content);
+  };
+
   // Custom components for ReactMarkdown
   const components = {
     code({ node, inline, className, children, ...props }) {
@@ -406,8 +462,8 @@ const BlogPost = () => {
         <Section>
           <BackButton
             onClick={() => navigate('/blog')}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
           >
             <FaArrowLeft />
             Back to Blog
@@ -429,8 +485,6 @@ const BlogPost = () => {
       <Section>
         <BackButton
           onClick={() => navigate('/blog')}
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
         >
@@ -476,12 +530,18 @@ const BlogPost = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
-          <ReactMarkdown
-            remarkPlugins={[remarkGfm]}
-            components={components}
-          >
-            {post.content || post.excerpt}
-          </ReactMarkdown>
+          {isHtmlContent(post.content) ? (
+            // Render HTML content directly
+            <div dangerouslySetInnerHTML={{ __html: post.content }} />
+          ) : (
+            // Render Markdown content
+            <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
+              components={components}
+            >
+              {post.content || post.excerpt}
+            </ReactMarkdown>
+          )}
         </Content>
       </Section>
 

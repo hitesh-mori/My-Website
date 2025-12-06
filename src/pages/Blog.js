@@ -80,9 +80,7 @@ const BlogCard = styled(motion(Link))`
   }
 
   &:hover {
-    border-color: ${({ theme }) => theme.primary}40;
-    transform: translateY(-4px);
-    box-shadow: ${({ theme }) => theme.shadowGlow};
+    /* No border or shadow - only top line animation */
 
     &::before {
       transform: scaleX(1);
