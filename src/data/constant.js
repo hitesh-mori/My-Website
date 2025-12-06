@@ -1084,6 +1084,304 @@ If you've done hackathons but never ranked, analyze what went wrong. Was it the 
 Hackathons aren't about being the best coder. They're about building something that works, presenting it well, and not falling apart when things go wrong.
 
 See you at the next one.`
+  },
+  {
+    id: "2",
+    slug: "blinklock-user-guide",
+    title: "User Guide for BlinkLock",
+    excerpt: "Complete user guide for BlinkLock - from installation and permissions to advanced features like Study Mode and Custom Rules.",
+    date: "2025-12-06",
+    readTime: "10 min read",
+    image: "https://firebasestorage.googleapis.com/v0/b/mori-hitesh.appspot.com/o/blinklock-coverimage.png?alt=media&token=04bead56-048f-4ca9-bfa9-f3c1353e69f1",
+    tags: ["User Guide", "BlinkLock", "Tutorial"],
+    content: `[Download BlinkLock](/products/blinklock)
+
+---
+
+## About the Application
+
+BlinkLock is an intelligent mobile application that uses advanced eye detection and face recognition technology to protect your sleep, enhance your study sessions, and provide smart screen management. The app automatically locks your phone or triggers alerts based on eye closure and face detection patterns.
+
+**Key Features:**
+- Real-time eye and face detection using ML Kit
+- Automatic screen locking when you fall asleep
+- Smart alarms for study sessions
+- Customizable trigger-action rules
+- Battery-optimized background monitoring
+- Home screen widget for quick control
+
+---
+
+## Installation
+
+Since BlinkLock is not yet available on the Play Store, you'll need to install it manually as an APK. During installation, you might encounter a **Google Play Protect** warning - this is normal for apps installed outside the Play Store.
+
+### Download the App
+
+First, download the APK from our product page: **[Download BlinkLock](/products/blinklock)**
+
+### Fixing the Play Protect Warning
+
+When you try to install the APK, you might see this error:
+
+![Google Play Protect Warning](/product/blinklock/installation%201.jpeg)
+
+**Don't worry!** Here's how to fix it:
+
+**Step 1:** Open the **Play Store** app and tap your **Profile Icon** in the top right corner.
+
+**Step 2:** Select **Play Protect** from the menu:
+
+![Play Protect Menu](/product/blinklock/installation%202.jpeg)
+
+**Step 3:** Tap the **Settings** (gear icon) in the top right corner:
+
+![Play Protect Settings](/product/blinklock/installation%203.jpeg)
+
+**Step 4:** Turn **OFF** the "Scan apps with Play Protect" option:
+
+![Disable Play Protect](/product/blinklock/installation%204.jpeg)
+
+**Step 5:** Now install the APK again - it will install successfully!
+
+**Step 6:** After installation, you can turn Play Protect back ON for security.
+
+---
+
+## Privacy & Permissions
+
+### Your Privacy Matters
+
+**We take your privacy seriously:**
+
+- **No cloud storage** - All data stays on your device
+- **No data collection** - We don't collect any personal information
+- **Local processing** - All face/eye detection runs locally on your phone
+- **No tracking** - We don't track your usage or behavior
+
+### Required Permissions
+
+To use BlinkLock, you'll need to grant the following permissions. Go to the **Settings** tab to configure them:
+
+![Required Permissions](/product/blinklock/permissions.jpeg)
+
+**1. Device Admin Permission**
+- **Why needed:** Required to automatically lock your screen
+- **Important:** To uninstall BlinkLock, you must **revoke this permission first** from Settings → Security → Device Administrators
+
+**2. Accessibility Permission**
+- **Why needed:** Detects screen touches and user interactions to keep the screen awake when you're actively using your phone
+
+**3. Camera Permission**
+- **Why needed:** Monitors your eyes and face to detect when you're falling asleep or not looking at the screen
+
+**You can revoke any permission anytime** from your device settings or within the BlinkLock app.
+
+---
+
+## Functionalities
+
+BlinkLock offers three smart modes to fit different scenarios:
+
+![Three Smart Modes](/product/blinklock/modes.jpeg)
+
+### 1. Sleep Mode
+
+**Perfect for:** Late-night movie watching or browsing
+
+**What it does:** Automatically locks your phone when it detects:
+- Your face is no longer visible
+- Your eyes are closed for an extended period
+
+**Why use it:**
+- Prevents battery drain from screen staying on
+- Avoids accidental touches while sleeping
+- Keeps your phone secure
+
+### 2. Study Mode
+
+**Perfect for:** Students, professionals, and night owls
+
+**What it does:** Instead of locking the phone, it plays an alarm to wake you up when you start dozing off
+
+**Why use it:**
+- Complete important tasks without wasting time
+- Stay alert during study sessions or work
+- Customizable alarm sound and response time
+
+### 3. Custom Mode
+
+**Perfect for:** Advanced users who want full control
+
+**What it does:** Create your own rules with custom triggers and actions
+
+**Available Triggers:**
+- Eyes closed for X seconds
+- Face not detected for X seconds
+- Screen not touched for X seconds
+
+**Available Actions:**
+- Lock the phone
+- Play alarm
+- Send notification
+- Vibrate device
+- Combine multiple actions
+
+---
+
+## Rules Tab
+
+The Rules tab gives you complete control over how BlinkLock reacts to different situations:
+
+![Creating Custom Rules](/product/blinklock/rule%201.jpeg)
+![Rule Configuration](/product/blinklock/rule%202.jpeg)
+
+### Creating Custom Rules
+
+**Step 1:** Tap the **"+"** button to add a new rule
+
+**Step 2:** Choose your trigger:
+- When eyes are closed
+- When face is not detected
+- When screen is not touched
+- Custom time intervals
+
+**Step 3:** Select your action:
+- Play alarm (choose your sound)
+- Lock the phone
+- Send notification
+- Vibrate
+
+**Step 4:** Set the **Response Time** - this is how long the app waits after detecting the trigger before executing the action
+
+**Example Rule:**  
+*"When eyes closed for 10 seconds → Play alarm"*
+
+This will wake you up if you start dozing off while reading!
+
+---
+
+## Monitoring
+
+Once you start monitoring, BlinkLock works in the background - even when the app is closed or your phone is locked:
+
+![Monitoring Active](/product/blinklock/monitoring%201.jpeg)
+![Background Monitoring](/product/blinklock/monitoring%202.jpeg)
+
+### How Monitoring Works
+
+**Starting Monitoring:**
+1. Select your desired mode (Sleep, Study, or Custom)
+2. Configure your settings (alarm, response time, etc.)
+3. Tap **"Start Monitoring"**
+4. Close the app and lock your phone - BlinkLock continues working!
+
+**Stopping Monitoring:**
+- To change mode, alarm, or response time, you must **stop monitoring first**
+- Use the Stop button in the app or the home screen widget
+
+### Custom Mode Monitoring
+
+When using Custom Mode, your created rules will be executed based on your configuration:
+
+![Custom Mode Monitoring](/product/blinklock/custom%20monitoring.jpeg)
+
+**Important:** Ensure Custom Mode is active for your custom rules to work. You can enable or disable individual rules - only enabled rules will execute during monitoring.
+
+---
+
+## Home Screen Widget
+
+Control BlinkLock without opening the app using the home screen widget!
+
+### Adding the Widget
+
+**Step 1:** Long press on an empty area of your home screen:
+
+![Add Widget Menu](/product/blinklock/widget%201.jpeg)
+
+**Step 2:** Tap **"Widgets"** from the menu. Scroll down and find **"BlinkLock"**:
+
+![BlinkLock Widget](/product/blinklock/widget%202.jpeg)
+
+**Step 3:** Drag and drop the widget to your home screen:
+
+![Widget on Home Screen](/product/blinklock/widget%203.jpeg)
+
+### Using the Widget
+
+The widget shows:
+- Current monitoring status (Active/Inactive)
+- Current mode (Sleep/Study/Custom)
+- Quick toggle button to start/stop monitoring
+
+**Benefits:**
+- Toggle monitoring ON/OFF instantly
+- Check status at a glance
+- No need to open the app
+- Perfect for quick access during study sessions
+
+---
+
+## Tips for Best Experience
+
+**Battery Optimization:**
+- Disable battery optimization for BlinkLock to ensure uninterrupted monitoring
+- Go to Settings → Battery → Battery Optimization → BlinkLock → Don't Optimize
+
+**Camera Placement:**
+- Keep your phone at a comfortable viewing angle
+- Ensure good lighting for accurate face/eye detection
+- Avoid covering the front camera
+
+**Response Time:**
+- Start with 10-15 seconds and adjust based on your needs
+- Shorter times = faster reactions but may trigger accidentally
+- Longer times = more tolerance but delayed response
+
+**Custom Rules:**
+- Test your rules before relying on them for important tasks
+- Combine multiple triggers for more accurate detection
+- Keep rules simple and focused
+
+---
+
+## Troubleshooting
+
+**App doesn't lock the phone:**
+- Ensure Device Admin permission is granted
+- Check if monitoring is active
+- Verify your selected mode settings
+
+**Alarm doesn't play:**
+- Check if your alarm sound is selected
+- Ensure phone volume is not muted
+- Verify Study Mode or Custom Mode with alarm action is active
+
+**Face/Eye detection not working:**
+- Grant camera permission
+- Ensure adequate lighting
+- Check if camera is not obstructed
+- Restart monitoring
+
+**Cannot uninstall:**
+- Go to Settings → Security → Device Administrators
+- Revoke BlinkLock's Device Admin permission
+- Then uninstall normally
+
+---
+
+## Thank You!
+
+Thank you for using BlinkLock! We hope it helps you:
+- Get better sleep without battery drain
+- Stay productive during study sessions
+- Have better control over your screen time
+
+**Stay safe, stay productive, and enjoy better sleep!**
+
+[Download BlinkLock Now](/products/blinklock)
+    `
   }
 ];
 

@@ -178,12 +178,44 @@ const Content = styled(motion.div)`
     }
   }
 
+  p {
+    margin-bottom: 20px;
+    color: ${({ theme }) => theme.text_secondary};
+    
+    /* Make consecutive images appear side-by-side on desktop */
+    img + img {
+      @media (min-width: 768px) {
+        margin-left: 16px;
+      }
+    }
+  }
+
   img {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
     margin: 24px 0;
+    display: inline-block;
     border: 1px solid ${({ theme }) => theme.border};
+    
+    @media (min-width: 768px) {
+      max-width: calc(50% - 8px);
+      vertical-align: top;
+    }
+    
+    @media (max-width: 767px) {
+      display: block;
+      margin: 24px auto;
+    }
+    
+    /* Single image (not followed by another img) should be centered and larger */
+    &:not(img + img):not(:has(+ img)) {
+      @media (min-width: 768px) {
+        max-width: 600px;
+        display: block;
+        margin: 24px auto;
+      }
+    }
   }
 
   code {
