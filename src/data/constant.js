@@ -229,7 +229,7 @@ BlinkLock is an intelligent mobile application that uses advanced eye detection 
     github: "https://github.com/hitesh-mori/blinklock.git",
     preview: "/products/blinklock",
     featured: true,
-    date: "2024",
+    date: "2025",
   },
   {
     id: "1",
